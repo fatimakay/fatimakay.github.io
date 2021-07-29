@@ -1544,7 +1544,7 @@ input, select, textarea {
 			transition: opacity 0.325s ease-in-out, transform 0.325s ease-in-out;
 			padding: 4.5rem 2.5rem 1.5rem 2.5rem ;
 			position: relative;
-			width: 40rem;
+			width: 45rem;
 			max-width: 100%;
 			background-color: rgba(27, 31, 34, 0.85);
 			border-radius: 4px;
@@ -1659,3 +1659,58 @@ input, select, textarea {
 		body.is-preload #footer {
 			opacity: 0;
 		}
+
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 #d0c0bd;
+  max-width: 300px;
+  max-height: 400px;
+  transition: 0.3s;
+  float: left;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 #d0c0bd;
+  transform: scale(1.1);
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+  height: 250px;
+  min-height: 250px;
+}
+.card-div{
+	padding: 15px;
+	float: left;
+	width: 50%;
+}
+.gitbtn{
+	display: grid;
+	padding: 10px 10px;
+	background-color: black;
+	color: white; 
+	text-align center; 
+}
+.livebtn{
+	display: grid;
+	padding: 10px 10px;
+	background-color: #3d6265;
+	color: white; 
+	text-align center;
+}
+.livebtn:hover{
+	background-color: #648184;
+}
+.gitbtn:hover{
+	background-color: #434648
+
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .row .resume{
+    width: 100%;
+  }
+}
