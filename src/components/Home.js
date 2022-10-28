@@ -14,9 +14,8 @@ const Home = () => {
     const lastName = [' Khan'];
 
     useEffect(() => {
-       return () =>  setTimeout(() =>{
+      
          setLetterClass('text-animate-hover')
-        }, 1000)
 
     }, [])
     return ( 
