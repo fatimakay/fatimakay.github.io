@@ -10,7 +10,6 @@ const Contact = () => {
     useEffect(() => {
         
          setLetterClass('text-animate-hover')
-      console.log("useEffect ran");
  
      }, [])
 
