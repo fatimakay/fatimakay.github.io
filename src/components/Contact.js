@@ -4,7 +4,7 @@ import AnimatedWord from './AnimatedWord';
 import emailjs from "emailjs-com";
 import './Contact.scss';
 const Contact = () => {
-    const[letterClass, setLetterClass] = useState('text-animate');
+    const[letterClass, setLetterClass] = useState('text-animate-hover');
     const [statusMessage, setStatusMessage] = useState("")
 
     useEffect(() => {
