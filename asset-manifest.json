@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c7ecb1ea.css",
+    "main.js": "/static/js/main.7d5a22ac.js",
+    "static/js/787.90147cfc.chunk.js": "/static/js/787.90147cfc.chunk.js",
+    "static/media/profilepic.png": "/static/media/profilepic.f698cfc00ba215954251.png",
+    "static/media/FrederickatheGreat-Regular.ttf": "/static/media/FrederickatheGreat-Regular.69cef5dc99024da59d1e.ttf",
+    "static/media/FK-logo.png": "/static/media/FK-logo.e0f17200fc2730b7c25d.png",
+    "static/media/FK-sub.png": "/static/media/FK-sub.2190ac6052cf7072adc7.png",
+    "static/media/ShadowsIntoLight-Regular.ttf": "/static/media/ShadowsIntoLight-Regular.e8c09384ff0643bf385d.ttf",
+    "static/media/helvetica-neu.ttf": "/static/media/helvetica-neu.8a19678078a6b21c8057.ttf",
+    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/index.html",
+    "main.c7ecb1ea.css.map": "/static/css/main.c7ecb1ea.css.map",
+    "main.7d5a22ac.js.map": "/static/js/main.7d5a22ac.js.map",
+    "787.90147cfc.chunk.js.map": "/static/js/787.90147cfc.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c7ecb1ea.css",
+    "static/js/main.7d5a22ac.js"
+  ]
+}
