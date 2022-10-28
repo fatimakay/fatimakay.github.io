@@ -8,8 +8,10 @@ const Contact = () => {
     const [statusMessage, setStatusMessage] = useState("")
 
     useEffect(() => {
-        return () => 
-          setLetterClass('text-animate-hover')
+        
+         setLetterClass('text-animate-hover')
+      console.log("useEffect ran");
+ 
      }, [])
 
      function sendEmail(e){
