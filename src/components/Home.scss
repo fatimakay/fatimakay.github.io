@@ -1,0 +1,84 @@
+.homepage{
+
+    .mainheading{
+        position: absolute; 
+        left: 10%; //away from sidebar
+        top: 50%; //vertically centered
+        transform: translateY(-50%); 
+        width: 40%; 
+        max-height: 90%; 
+
+    }
+    h1{
+        color: white; 
+        font-size: 53px; 
+        margin: 0; 
+        font-family: 'Fred'; 
+        font-weight: 400;
+
+        &::before{
+            content: '<h1>'; 
+            font-family: 'Shadows'; 
+            color: #8EE3EF; 
+            font-size: 18px; 
+            position: absolute; 
+            margin-top: -40px; 
+            left: 15px; 
+            opacity: 0.6;
+        }
+
+        &::after{
+            content: '</h1>'; 
+            font-family: 'Shadows';
+            color: #8EE3EF;
+            font-size: 18px; 
+            position: absolute; 
+            margin-top: 18px; 
+            margin-left: 20px; 
+            animation: fadeIn 1s 1.7s backwards; 
+            opacity: 0.6; 
+        }
+        img{
+            width: 45px;
+            margin-left: 18px;
+            opacity: 0; 
+            height: auto; 
+            animation: rotateIn 1s linear both;
+            animation-delay: 1.4s;
+        }
+    }
+    h2{
+        color: #a09e9e;
+        margin-top: 20px; 
+        font-weight: 400; 
+        font-size: 12px;
+        font-family: sans-serif; 
+        letter-spacing: 3px;
+        animation: fadeIn 1s 1.8s backwards;
+    }
+
+    .flat-button{
+        color: #8EE3EF; 
+        font-size: 13px; 
+        font-weight: 400;
+        letter-spacing: 4px;
+        font-family: sans-serif;
+        text-decoration: none;
+        padding: 10px 18px;
+        border: 1px solid #8EE3EF; 
+        margin-top: 25px; 
+        float: left; 
+        animation: fadeInAnimation 1s 1.8s backwards; 
+        white-space: nowrap;
+
+        &:hover{
+            background: #8EE3EF;
+            color: #333; 
+        }
+        &:focus{
+            background: #8EE3EF;
+            color: #333; 
+        }
+
+    }
+}
