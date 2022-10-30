@@ -11,7 +11,7 @@
     }
     h1{
         color: white; 
-        font-size: 53px; 
+        font-size: 4.2vw; 
         margin: 0; 
         font-family: 'Fred'; 
         font-weight: 400;
@@ -20,7 +20,7 @@
             content: '<h1>'; 
             font-family: 'Shadows'; 
             color: #8EE3EF; 
-            font-size: 18px; 
+            font-size: 14px; 
             position: absolute; 
             margin-top: -40px; 
             left: 15px; 
@@ -31,7 +31,7 @@
             content: '</h1>'; 
             font-family: 'Shadows';
             color: #8EE3EF;
-            font-size: 18px; 
+            font-size: 14px; 
             position: absolute; 
             margin-top: 18px; 
             margin-left: 20px; 
@@ -51,7 +51,7 @@
         color: #a09e9e;
         margin-top: 20px; 
         font-weight: 400; 
-        font-size: 12px;
+        font-size: 11px;
         font-family: sans-serif; 
         letter-spacing: 3px;
         animation: fadeIn 1s 1.8s backwards;
@@ -59,7 +59,7 @@
 
     .flat-button{
         color: #8EE3EF; 
-        font-size: 13px; 
+        font-size: 1vw; 
         font-weight: 400;
         letter-spacing: 4px;
         font-family: sans-serif;
@@ -81,4 +81,70 @@
         }
 
     }
+}
+
+@media  screen and (max-width: 1024px){
+    .homepage{
+    .mainheading{
+        left: 12%; //away from sidebar
+        top: 40%; //vertically centered
+        transform: translateY(-50%); 
+    }
+    h1{
+        img{
+            width: 35px;
+        }
+    }
+}
+}
+
+@media  screen and (max-width: 768px){
+    .homepage{
+    .mainheading{
+        left: 13%; //away from sidebar
+        top: 40%; //vertically centered
+        transform: translateY(-50%); 
+    }
+    h1{
+        font-size: 23px;
+        img{
+            width: 24px;
+        }
+    }
+    .flat-button{
+        font-size: 8px;
+        padding: 8px 16px;
+
+    }
+}
+}
+@media only screen and (max-width: 480px){
+    .homepage{
+    h1{
+        &::before{
+            margin-top: -22px; 
+            left: 0; 
+            opacity: 0.6;
+            font-size: 12px;
+        }
+        &::after{
+             font-size: 12px;
+            margin-top: 8px; 
+            margin-left: 18px; 
+        }
+        img{
+            width: 22px;
+        }
+    }
+}
+}
+
+@media only screen and (max-width: 320px){
+    .homepage{
+        .mainheading{
+            width: 100%;
+            left: 7%;
+        }
+    }
+
 }

@@ -1,4 +1,6 @@
+
 .page{
+    
     width: 100%; 
     height: 100%; 
     position: absolute; 
@@ -14,7 +16,7 @@
     position: absolute; 
     bottom: 0; 
     left: 120px; 
-    font-size: 16px; 
+    font-size: 14px; 
     letter-spacing: 2px;
     font-family: 'Shadows';
 }
@@ -24,6 +26,7 @@
 
 //styles that will be same for every page, better to list them here than in seperate components
 .container{
+   
     width: 100%; 
     will-change: contents;
     height: 90%; 
@@ -53,7 +56,7 @@
         max-height: 90%;
 
         h1{
-            font-size: 53px; 
+            font-size: 4.2vw; 
             font-family: 'Fred';
             color:#8EE3EF; 
             font-weight: 400;
@@ -65,7 +68,7 @@
             &::before{
                 content: '<h1>'; 
                 font-family: 'Shadows';
-                font-size: 18px;
+                font-size: 14px;
                 position: absolute; 
                 margin-top: -10px; 
                 left: -10px; 
@@ -76,7 +79,7 @@
             &::after{
                 content: '</h1>'; 
                 font-family: 'Shadows'; 
-                font-size: 18px; 
+                font-size: 14px; 
                 line-height: 18px; 
                 position: absolute;
                 left: -30px;
@@ -86,7 +89,7 @@
             }
         }
         p{
-            font-size: 13px; 
+            font-size: 1vw; 
             color: white; 
             font-family: sans-serif;
             font-weight: 300;
@@ -104,4 +107,24 @@
 }
 *::placeholder{
     color: white; 
+}
+
+@media  screen and (max-width: 1024px){
+    .tags{
+        left: 100px;
+    }
+}
+@media  screen and (max-width: 768px){
+    .tags{
+        left: 75px;
+    }
+}
+@media  screen and (max-width: 480px){
+    .top-tags{
+        top: 50px;
+    }
+    .tags{
+        left: 26px;
+        font-size: 12px;
+    }
 }
