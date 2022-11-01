@@ -174,8 +174,6 @@ ul{
             line-height: 48px; 
             height: 48px;
         }
-            
-        
     }
     ul{
         bottom: 60px;
@@ -213,17 +211,11 @@ ul{
     .navbar{
         width: 100%;
         height: 10%;
-        justify-content: start;
-        align-items: center;
             .logo{
-                img{
-                    padding: 10px;
-                    width: 25px; 
-                    height: auto; 
-                }
+                display:none;
             }
             nav{
-                height: 10%;
+                height: 50px;
                 top: 0; 
                 margin-top: 0; 
                 a{
@@ -242,7 +234,7 @@ ul{
 
     @media only screen and (max-width: 320px){
         .navbar{
-           
+        
                 .logo{
                     display: none;
                 }
@@ -251,7 +243,8 @@ ul{
                         padding: 18px;
                         font-size: 16px;                        
                     }
-                    
+
+                    //stopped here
                 }
             
         }

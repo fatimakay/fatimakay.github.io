@@ -6,3 +6,18 @@
     animation: fadeIn 1s;  
     }  
 }
+
+@media  screen and (max-width: 768px){
+    .profilepic{
+    img{
+    width: 400px;
+    }
+}
+}
+@media  screen and (max-width: 480px){
+    .profilepic{
+    img{
+    display:none;  
+    }
+}
+}

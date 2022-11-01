@@ -81,19 +81,58 @@
         }
 
     }
+    .rocketship{
+        display:none;
+    }
+    .planet{
+        position: absolute; 
+        right: 11%; //away from sidebar
+        top: 50%; //vertically centered
+        transform: translateY(-50%);       
+        width: 40%; 
+        &:hover + .rocketship{
+           
+                display: inline;
+                position: absolute; 
+                left: 30%;
+                bottom: 45%; 
+                width: 20%; 
+                max-height: 90%; 
+                animation: move-diagonal 4s linear infinite  ;
+            
+        }
+    }
+   
+}
+@keyframes move-diagonal{
+    0% {
+		transform: translateY(-500);
+        opacity: 0;
+	}
+    30%{
+        opacity: 0.8
+    }
+
+	100% {
+		transform: translate(500px, -500px);
+	}
+   
+
 }
 
 @media  screen and (max-width: 1024px){
     .homepage{
     .mainheading{
         left: 12%; //away from sidebar
-        top: 40%; //vertically centered
         transform: translateY(-50%); 
     }
     h1{
         img{
             width: 35px;
         }
+    }
+    .planet{
+        right: 8%; //away from sidebar
     }
 }
 }
@@ -103,18 +142,30 @@
     .mainheading{
         left: 13%; //away from sidebar
         top: 40%; //vertically centered
-        transform: translateY(-50%); 
     }
     h1{
-        font-size: 23px;
+        font-size: 35px;
+        &::before{
+            margin-top: -22px; 
+            left: 0; 
+        }
+        &::after{
+             font-size: 12px;
+            margin-top: 20px; 
+            margin-left: 18px; 
+        }
         img{
-            width: 24px;
+            width: 30px;
         }
     }
     .flat-button{
         font-size: 8px;
         padding: 8px 16px;
 
+    }
+    .planet{
+        right: 6%; //away from sidebar
+        top: 40%;
     }
 }
 }
@@ -124,7 +175,6 @@
         &::before{
             margin-top: -22px; 
             left: 0; 
-            opacity: 0.6;
             font-size: 12px;
         }
         &::after{
@@ -133,8 +183,14 @@
             margin-left: 18px; 
         }
         img{
-            width: 22px;
+            width: 25px;
         }
+    }
+    .planet{
+        display:none;
+    }
+    .rocketship{
+        display:none;
     }
 }
 }
@@ -144,6 +200,9 @@
         .mainheading{
             width: 100%;
             left: 7%;
+        }
+        h1{
+            font-size: 30px;
         }
     }
 

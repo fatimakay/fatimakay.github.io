@@ -74,3 +74,58 @@
     }
 
 }
+.spaceimg{
+    position: absolute; 
+    right: 7%; //away from sidebar
+    top: -30px; //vertically centered
+    width: 40%;
+    opacity: 0.8;
+}
+@media  screen and (max-width: 768px){
+    .contact-page{
+        .textarea{
+            width: 40%;
+            h1{
+                margin-top: -100px;
+            }
+    }
+    }
+    .contact-form{
+        margin-top:-12px;
+         input[type=text], input[type=email]{
+            font-size: 14px; 
+            height: 45px;
+        }
+        textarea{
+            font-size: 14px;
+            min-height: 100px;
+        }
+        
+    }
+    .spaceimg{
+    right: 5%; //away from sidebar
+    }
+}
+@media  screen and (max-width: 480px){
+    .contact-page{
+        .textarea{
+            width: 80%;
+    }
+    }
+    .contact-form{
+         input[type=text], input[type=email]{
+            font-size: 13px; 
+            height: 30px;
+        }
+        textarea{
+            font-size: 13px;
+        }
+        .flat-button{
+            font-size: 10px; 
+            letter-spacing: 2px;
+        }
+    }
+    .spaceimg{
+        display: none;
+            }
+}

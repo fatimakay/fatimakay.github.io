@@ -14,6 +14,7 @@
     "@testing-library/user-event": "^13.5.0",
     "animate.css": "^4.1.1",
     "emailjs-com": "^3.2.0",
+    "emoji-mouse-trace": "^1.0.8",
     "gsap-trial": "^3.11.3",
     "loaders.css": "^0.1.2",
     "react": "^18.2.0",

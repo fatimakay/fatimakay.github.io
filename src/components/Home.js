@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom';
 import LogoF from '../assets/images/FK-logo.png';
+import Planet from '../assets/images/planets.png';
+import Rocket from '../assets/images/rocketship.png';
 import './Layout.scss'; 
 import './Home.scss';
 import AnimatedWord from './AnimatedWord';
@@ -32,6 +34,8 @@ const Home = () => {
                 <h2>Front-end Developer</h2>
                 <Link to="/contact" className='flat-button'>CONTACT ME</Link>
             </div>
+            <img className="planet" src={Planet}></img>
+            <img className="rocketship" src={Rocket}></img>
         </div>
 
         <Loader type="line-scale-pulse-out"/>
