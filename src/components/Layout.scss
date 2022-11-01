@@ -140,10 +140,8 @@
         left: 75px;
     }
 }
-@media  screen and (max-width: 480px){
-.about-page, 
-.contact-page,
-.projects-page{
+@media  screen and (max-width: 500px){
+.about-page{
     .textarea{
         width: 55%;
         h1{
@@ -167,7 +165,7 @@
     .contact-page,
     .projects-page{
         .textarea{
-            width: 70%;
+            width: 80%;
             h1{
                 margin-top: -110px;
                 font-size: 22px;

@@ -141,7 +141,6 @@
     .homepage{
     .mainheading{
         left: 13%; //away from sidebar
-        top: 40%; //vertically centered
     }
     h1{
         font-size: 35px;
@@ -165,12 +164,15 @@
     }
     .planet{
         right: 6%; //away from sidebar
-        top: 40%;
     }
 }
 }
-@media only screen and (max-width: 480px){
+@media only screen and (max-width: 500px){
     .homepage{
+    .mainheading{
+        width: 75%; 
+        top: 45%;
+    }
     h1{
         &::before{
             margin-top: -22px; 
