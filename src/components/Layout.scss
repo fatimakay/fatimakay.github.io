@@ -125,17 +125,6 @@
     }
 }
 @media  screen and (max-width: 768px){
-.about-page, 
-.projects-page{
-    .textarea{
-        h1{
-            margin-top: -120px;
-        }
-        p{
-        font-size: 11px;
-        }
-}
-}
     .tags{
         left: 75px;
     }
@@ -143,14 +132,8 @@
 @media  screen and (max-width: 500px){
 .about-page{
     .textarea{
-        width: 55%;
-        h1{
-            margin-top: -90px;
-        }
-        p{
-        font-size: 11px;
-        }
-}
+        width: 60%;    
+    }
 }
     .top-tags{
         top: 70px;

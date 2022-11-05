@@ -16,9 +16,7 @@ const Home = () => {
     const lastName = [' Khan'];
 
     useEffect(() => {
-      
          setLetterClass('text-animate-hover')
-
     }, [])
     return ( 
         <>
