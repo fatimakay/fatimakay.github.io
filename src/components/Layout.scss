@@ -43,8 +43,7 @@
 
 //about page
 .about-page, 
-.contact-page,
-.projects-page{
+.contact-page{
     .textarea{
         position: absolute; 
         left: 10%; 
@@ -65,28 +64,6 @@
             margin-bottom: 40px;
             left: 10px; 
 
-            &::before{
-                content: '<h1>'; 
-                font-family: 'Shadows';
-                font-size: 14px;
-                position: absolute; 
-                margin-top: -10px; 
-                left: -10px; 
-                opacity: 0.6;
-                line-height: 18px;
-            }
-
-            &::after{
-                content: '</h1>'; 
-                font-family: 'Shadows'; 
-                font-size: 14px; 
-                line-height: 18px; 
-                position: absolute;
-                left: -30px;
-                bottom: -20px; 
-                margin-left: 20px; 
-                opacity:0.6;
-            }
         }
         p{
             font-size: 1vw; 

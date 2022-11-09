@@ -65,7 +65,7 @@ const Contact = () => {
             <img className="spaceimg" src={Space}></img>
         </div>
      <Loader type="line-scale-pulse-out"/>
-"
+
         </>
      );
 }

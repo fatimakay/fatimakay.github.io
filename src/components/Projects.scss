@@ -1,0 +1,77 @@
+.projects-page{
+    overflow-y: auto;
+    .textarea{
+        width: 90%;
+        height: 100%;
+        position: absolute; 
+        left: 10%; 
+        top: 50%; 
+        transform: translateY(-50%); 
+        vertical-align: middle;
+        display: table-cell;
+        max-height: 90%;
+    }
+
+    .text-animate-hover{
+        &:hover{
+            color:white; 
+            
+        }
+    }
+}
+::-webkit-scrollbar {
+    width: 2px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: none; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+
+.card{
+    background: none;
+    box-shadow: 1px 1px 29px 4px rgba(26,12,12,0.94);
+    &:hover{
+        box-shadow: 1px 1px 15px 4px rgba(142,227,239,0.94);
+        transform: scale(1.05); 
+    }
+    font-family: 'Helvetica';
+
+}
+.card-title{
+    color: white;
+    font-size: clamp(12px, 1.4vw, 16px );
+    font-weight: bold;
+}
+p.card-text{
+    font-size: clamp(11px, 1.2vw, 16px );
+    color: white;
+}
+.btn{
+    border-radius: 0;
+}
+.githubbtn{
+    color: white;
+    border: 1px solid #8EE3EF;
+    font-size: clamp(12px, 1.1vw, 16px );
+    &:hover{
+        background-color: #8EE3EF;
+        color: black;
+    }
+}
+.livebtn{
+    background-color: #8EE3EF;
+    font-size: clamp(12px, 1.1vw, 16px );
+    color: black;
+    &:hover{
+        background-color: #8ee4efaf;
+    }
+}
+.card-img-top{
+    height: 15vw;
+}
