@@ -11,19 +11,10 @@
     }
     h1{
         color: white; 
-        font-size: 4.2vw; 
+        font-size: clamp(30px, 4.2vw, 52px); 
         margin: 0; 
         font-family: 'Fred'; 
         font-weight: 400;
-
-        img{
-            width: 45px;
-            margin-left: 18px;
-            opacity: 0; 
-            height: auto; 
-            animation: rotateIn 1s linear both;
-            animation-delay: 1.4s;
-        }
     }
     h2{
         color: #a09e9e;
@@ -121,16 +112,7 @@
         left: 13%; //away from sidebar
     }
     h1{
-        font-size: 35px;
-        &::before{
-            margin-top: -22px; 
-            left: 0; 
-        }
-        &::after{
-             font-size: 12px;
-            margin-top: 20px; 
-            margin-left: 18px; 
-        }
+       
         img{
             width: 30px;
         }
@@ -151,16 +133,6 @@
         width: 75%; 
     }
     h1{
-        &::before{
-            margin-top: -22px; 
-            left: 0; 
-            font-size: 12px;
-        }
-        &::after{
-             font-size: 12px;
-            margin-top: 8px; 
-            margin-left: 18px; 
-        }
         img{
             width: 25px;
         }
@@ -180,9 +152,7 @@
             width: 100%;
             left: 7%;
         }
-        h1{
-            font-size: 30px;
-        }
+        
     }
 
 }

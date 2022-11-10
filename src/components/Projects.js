@@ -12,19 +12,16 @@ const Projects = () => {
     const[letterClass, setLetterClass] = useState('text-animate');
 
     useEffect(() => {
- 
           setLetterClass('text-animate-hover')
- 
      }, [])
     return ( 
         <>
         <div className="container projects-page">
             <div className="textarea">
-        
                 <div className="row row-cols-1 row-cols-md-3 card-deck">
                     <div className="col mb-5">
                         <div className="card h-100">
-                            <img src={Memoed} className="card-img-top " alt="..."/>
+                            <img src={Memoed} className="card-img-top "/>
                             <div className="card-body">
                                 <h5 className="card-title">Memoed - Notes Taking App</h5>
                                     <p className="card-text">A basic notes taking application built using ReactJS.
