@@ -43,7 +43,8 @@
 
 //about page
 .about-page, 
-.contact-page{
+.contact-page,
+.projects-page{
     .textarea{
         position: absolute; 
         left: 10%; 
@@ -61,8 +62,7 @@
             font-weight: 400;
             margin-top: 0;
             position: relative;
-            margin-bottom: 40px;
-            left: 10px; 
+            margin-bottom: 40px; 
 
         }
         p{

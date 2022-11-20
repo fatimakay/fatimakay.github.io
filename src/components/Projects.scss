@@ -1,7 +1,15 @@
 .projects-page{
-    overflow-y: auto;
+    .mainheading{
+        position: absolute; 
+        top: 50%; //vertically centered
+        transform: translateY(-50%); 
+        width: 40%; 
+        max-height: 90%; 
+
+    }
     .textarea{
-        width: 90%;
+        
+        width: 95%;
         height: 100%;
         position: absolute; 
         left: 10%; 
@@ -9,9 +17,15 @@
         transform: translateY(-50%); 
         vertical-align: middle;
         display: table-cell;
-        max-height: 90%;
+        max-height: 100%;
+        .row{
+            height: 90vh;
+        }
+        .projectslist{
+            overflow-y: scroll;
+        }
+        
     }
-
     .text-animate-hover{
         &:hover{
             color:white; 
@@ -19,6 +33,7 @@
         }
     }
 }
+
 ::-webkit-scrollbar {
     width: 2px;
   }
@@ -35,10 +50,8 @@
 
 .card{
     background: none;
-    box-shadow: 1px 1px 29px 4px rgba(26,12,12,0.94);
     &:hover{
-        box-shadow: 1px 1px 15px 4px rgba(142,227,239,0.94);
-        transform: scale(1.05); 
+        box-shadow: #888 0px 1px 4px;
     }
     font-family: 'Helvetica';
 
@@ -73,8 +86,17 @@ p.card-text{
     }
 }
 .card-img-top{
-    height: 15vw;
+    height: 22vw;
 }
-.col{
-    max-width: 90%;
+.scrollimg{
+    max-width: 20px; 
+    position: fixed;
+    left: 48%;
+    bottom: 10%;
+    animation: slideInDown 1.5s infinite ;
+}
+@media only screen and (max-width: 500px){
+    .scrollimg{
+        display: none;
+    }
 }
