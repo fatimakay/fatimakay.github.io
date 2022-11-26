@@ -1,9 +1,40 @@
 .profilepic{
     img{
     width: 500px;
-    margin-left: 50%;
+    right: 1%;
+    position: absolute;
     animation: fadeIn 1s;  
     }  
+}
+.skills{
+    display: flex;
+    flex-wrap: wrap;
+    .card{
+        box-shadow: inset 0px 0px 25px 13px #262B2B;
+        display: flex;
+        background-color: white !important;
+        border: none;
+      } 
+    svg{
+        font-size: clamp(30px, 30px, 30px);
+        border-color: rgba(0,0,0,0.6);
+    }
+    #html{
+        color: #E44D26;
+    }
+    #css{
+       color: #264de4;
+    }
+    #bootstrap{
+       color: #563d7c;
+    }
+    #react{
+        color: #61dbfb;
+    }
+    #wordpress{
+        color:  #00749C; 
+    }
+
 }
 
 @media  screen and (max-width: 768px){

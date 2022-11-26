@@ -1,8 +1,10 @@
-import { faScrewdriver, faWrench } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight, faScrewdriver, faWrench } from "@fortawesome/free-solid-svg-icons";
 import { useEffect, useState } from "react";
 import Memoed from '../assets/images/memoed.PNG'
 import QuizToit from '../assets/images/quiztoit.PNG'; 
+import Luxescope from '../assets/images/luxescope.PNG';
+import Arrow from '../assets/images/arrow.png'; 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import scroller from '../assets/images/scroll.png';
 import Loader from "react-loaders";
 import AnimatedWord from "./AnimatedWord";
@@ -24,10 +26,12 @@ const Projects = () => {
                 <div className="row row-cols-1 row-cols-md-2 ">
                 <div className="col mb-5 ">
                 <div className="mainheading">
+            
                 <h1>              
                  <AnimatedWord letterClass={letterClass} strArray={['My']}/>&nbsp;
-                <AnimatedWord letterClass={letterClass} strArray={['Work']}/>
+                 <AnimatedWord letterClass={letterClass} strArray={['Work']}/>
                 </h1>
+                <p>A collection of some of my projects.</p>
             </div>
             
                     </div>
@@ -37,7 +41,22 @@ const Projects = () => {
                             <div className="card-body">
                                 <h5 className="card-title">Memoed - Notes Taking App</h5>
                                     <p className="card-text">A basic notes taking application built using ReactJS.
-                                    Firebase was used for backend to authenticate the user and store their notes </p>
+                                    Firebase was used for backend and for hosting. </p>
+                            </div>
+                            <div className="card-footer">
+                            <a href="https://github.com/fatimakay/notes-app" target="_blank">
+                                <button className="githubbtn btn">View on Github</button></a>
+                                <a href="https://memoed-73535.web.app/" target="_blank">
+                                    <button className="livebtn btn">Live Demo</button></a>
+                            </div>
+                        </div>
+                        <div className="card mb-5">
+                            <img src={Luxescope} className="card-img-top "/>
+                            <div className="card-body">
+                                <h5 className="card-title">luxescope - Fictional Watch Store</h5>
+                                    <p className="card-text">A fake ecommerce website built using 
+                                    Wordpress and Elementor. It integrates various plugins like
+                                    Woocommerce and Shopengine.</p>
                             </div>
                             <div className="card-footer">
                             <a href="https://github.com/fatimakay/notes-app" target="_blank">

@@ -20,7 +20,7 @@ const Home = () => {
     }, [])
     return ( 
         <>
-        <div className="container homepage">
+        <div className="container homepage mx-auto">
             <div className="mainheading">
                 <h1>              
                  <AnimatedWord letterClass={letterClass} strArray={hello}/>

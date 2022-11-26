@@ -3,6 +3,10 @@ import AnimatedWord from './AnimatedWord';
 import profilepic from '../assets/images/profilepic.png';
 import { useEffect, useState } from 'react';
 import Loader from 'react-loaders';
+import { faSquare } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBootstrap, faCss3, faHtml5, faPhp, faReact, faWordpress } from '@fortawesome/free-brands-svg-icons';
+
 const About = () => {
 
     const[letterClass, setLetterClass] = useState('text-animate');
@@ -29,6 +33,37 @@ const About = () => {
                     unfamiliar language, PHP, while effectively meeting my supervisor's milestones.
                     Currently, I am working on improving my Javascript skills and using the ReactJS framework.
                 </p>
+                <h2>
+                <AnimatedWord letterClass={letterClass} strArray={['Skills']}/>
+                </h2>
+                <div class="skills mb-5 w-75">
+                <div class="card text-center" >
+                    <div class="card-body">
+                    <FontAwesomeIcon id="html" icon={faHtml5} ></FontAwesomeIcon>
+                     </div>
+                </div>
+                <div class="card text-center">
+                    <div class="card-body">
+                    <FontAwesomeIcon id="css" icon={faCss3} ></FontAwesomeIcon>
+                     </div>
+                </div>
+                <div class="card text-center">
+                    <div class="card-body">
+                    <FontAwesomeIcon id="react" icon={faReact} ></FontAwesomeIcon>
+                     </div>
+                </div>
+                <div class="card text-center">
+                    <div class="card-body">
+                    <FontAwesomeIcon id="bootstrap" icon={faBootstrap} ></FontAwesomeIcon>
+                     </div>
+                </div>
+                <div class="card text-center">
+                    <div class="card-body">
+                    <FontAwesomeIcon id="wordpress" icon={faWordpress} ></FontAwesomeIcon>
+                     </div>
+                </div>
+            
+                </div>
             </div>
             <div className="profilepic">
                     <img src={profilepic}/>

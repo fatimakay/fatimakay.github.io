@@ -29,7 +29,7 @@ const Contact = () => {
      }
     return ( 
         <>
-        <div className="container contact-page">
+        <div className="container contact-page ">
             <div className="textarea">
                 <h1>
                     <AnimatedWord letterClass={letterClass} strArray={['Get']}/>&nbsp;

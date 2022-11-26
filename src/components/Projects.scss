@@ -2,8 +2,8 @@
     .mainheading{
         position: absolute; 
         top: 50%; //vertically centered
+        left: 15%;
         transform: translateY(-50%); 
-        width: 40%; 
         max-height: 90%; 
 
     }
@@ -20,8 +20,10 @@
         max-height: 100%;
         .row{
             height: 90vh;
+            width: 97%;
         }
         .projectslist{
+            right: 1%;
             overflow-y: scroll;
         }
         
@@ -35,7 +37,7 @@
 }
 
 ::-webkit-scrollbar {
-    width: 2px;
+    width: 0px;
   }
   
   /* Track */
@@ -47,8 +49,9 @@
   ::-webkit-scrollbar-thumb {
     background: #888; 
   }
-
+ .projectslist{
 .card{
+    width: 95%;
     background: none;
     &:hover{
         box-shadow: #888 0px 1px 4px;
@@ -86,15 +89,17 @@ p.card-text{
     }
 }
 .card-img-top{
-    height: 22vw;
+    height: 19vw;
 }
+ }
 .scrollimg{
     max-width: 20px; 
     position: fixed;
-    left: 48%;
+    right: 2%;
     bottom: 10%;
     animation: slideInDown 1.5s infinite ;
 }
+
 @media only screen and (max-width: 500px){
     .scrollimg{
         display: none;
