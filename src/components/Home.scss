@@ -15,6 +15,7 @@
         margin: 0; 
         font-family: 'Fred'; 
         font-weight: 400;
+        animation: fadeInUp 1s 1s backwards;
     }
     h2{
         color: #a09e9e;
@@ -23,7 +24,7 @@
         font-size: 13px;
         font-family: sans-serif; 
         letter-spacing: 3px;
-        animation: fadeIn 1s 1.8s backwards;
+        animation: fadeIn 1s 2.0s backwards;
     }
 
     .flat-button{
@@ -37,7 +38,7 @@
         border: 1px solid #8EE3EF; 
         margin-top: 25px; 
         float: left; 
-        animation: fadeInAnimation 1s 1.8s backwards; 
+        animation: fadeInUp 1s 2.5s backwards; 
         white-space: nowrap;
 
         &:hover{

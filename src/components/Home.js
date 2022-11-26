@@ -7,6 +7,7 @@ import './Home.scss';
 import AnimatedWord from './AnimatedWord';
 import { useEffect, useState } from 'react';
 import Loader from 'react-loaders';
+import { useLayoutEffect } from 'react';
 
 const Home = () => {
 
@@ -18,6 +19,8 @@ const Home = () => {
     useEffect(() => {
          setLetterClass('text-animate-hover')
     }, [])
+
+    
     return ( 
         <>
         <div className="container homepage mx-auto">

@@ -3,12 +3,14 @@
     width: 500px;
     right: 1%;
     position: absolute;
-    animation: fadeIn 1s;  
+    animation: fadeInRight 1.5s 2.6s backwards;
+
     }  
 }
 .skills{
     display: flex;
     flex-wrap: wrap;
+    animation: fadeInUp 1s 2.6s backwards;
     .card{
         box-shadow: inset 0px 0px 25px 13px #262B2B;
         display: flex;
