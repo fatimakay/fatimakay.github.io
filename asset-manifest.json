@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.60c9de61.css",
-    "main.js": "/static/js/main.7b6bb1b3.js",
+    "main.css": "/static/css/main.86cac233.css",
+    "main.js": "/static/js/main.85e1cd47.js",
     "static/js/787.90147cfc.chunk.js": "/static/js/787.90147cfc.chunk.js",
     "static/media/profilepic.png": "/static/media/profilepic.f698cfc00ba215954251.png",
+    "static/media/luxescope.PNG": "/static/media/luxescope.9d5ca93c9f25bbba89ca.PNG",
     "static/media/FrederickatheGreat-Regular.ttf": "/static/media/FrederickatheGreat-Regular.69cef5dc99024da59d1e.ttf",
     "static/media/space.png": "/static/media/space.8fa392bb74d61175fedf.png",
     "static/media/FK-logo.png": "/static/media/FK-logo.e0f17200fc2730b7c25d.png",
@@ -16,12 +17,12 @@
     "static/media/helvetica-neu.ttf": "/static/media/helvetica-neu.8a19678078a6b21c8057.ttf",
     "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/index.html",
-    "main.60c9de61.css.map": "/static/css/main.60c9de61.css.map",
-    "main.7b6bb1b3.js.map": "/static/js/main.7b6bb1b3.js.map",
+    "main.86cac233.css.map": "/static/css/main.86cac233.css.map",
+    "main.85e1cd47.js.map": "/static/js/main.85e1cd47.js.map",
     "787.90147cfc.chunk.js.map": "/static/js/787.90147cfc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.60c9de61.css",
-    "static/js/main.7b6bb1b3.js"
+    "static/css/main.86cac233.css",
+    "static/js/main.85e1cd47.js"
   ]
 }
