@@ -3,6 +3,7 @@ import { useEffect, useLayoutEffect, useState } from "react";
 import Memoed from '../assets/images/memoed.PNG'
 import QuizToit from '../assets/images/quiztoit.PNG'; 
 import Luxescope from '../assets/images/luxescope.PNG';
+import LandingPage from '../assets/images/landingpage.PNG';
 import Arrow from '../assets/images/arrow.png'; 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import scroller from '../assets/images/scroll.png';
@@ -60,14 +61,13 @@ const Projects = () => {
                                     Woocommerce and Shopengine.</p>
                             </div>
                             <div className="card-footer">
-                            <a href="https://github.com/fatimakay/notes-app" target="_blank">
-                                <button className="githubbtn btn">View on Github</button></a>
-                                <a href="https://memoed-73535.web.app/" target="_blank">
+                        
+                                <a href="http://luxescope.byethost22.com" target="_blank">
                                     <button className="livebtn btn">Live Demo</button></a>
                             </div>
                         </div>
                         <div className="card mb-5">
-                            <img src="https://images.pexels.com/photos/268633/pexels-photo-268633.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" 
+                            <img src={LandingPage}
                             className="card-img-top  " alt="..."/>
                             <div className="card-body">
                                 <h5 className="card-title">Travel Landing Page Design</h5>

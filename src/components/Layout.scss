@@ -77,15 +77,8 @@
     color: white; 
 }
 
-@media  screen and (max-width: 1024px){
-    .tags{
-        left: 100px;
-    }
-}
 @media  screen and (max-width: 768px){
-    .tags{
-        left: 75px;
-    }
+
     .textarea{
         p{
         margin-left: 5%;
@@ -93,18 +86,18 @@
 }
 }
 @media  screen and (max-width: 500px){
-.about-page{
+.about-page, .projects-page{
     .textarea{
-        width: 60%;    
+        width: 70%; 
+        h1{
+            margin-bottom: 20px;
+            margin-top: 40px;
+           }   
+        p{
+            margin-left: 0;
+        }
     }
 }
-    .top-tags{
-        top: 70px;
-    }
-    .tags{
-        left: 26px;
-        font-size: 12px;
-    }
 }
 @media  screen and (max-width: 320px){
     .about-page, 
@@ -118,7 +111,5 @@
             }
     }
     }
-        .tags{
-            display: none;
-        }
+
     }

@@ -36,6 +36,7 @@
     #wordpress{
         color:  #00749C; 
     }
+  
 
 }
 
@@ -52,7 +53,10 @@
 @media  screen and (max-width: 500px){
     .profilepic{
     img{
-    display:none;  
+        width: 270px;
+        z-index: -1;
+        top: 55%;
+        right: -13%;
     }
 }
 }

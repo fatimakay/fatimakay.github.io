@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react';
 import Loader from 'react-loaders';
 import { faSquare } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBootstrap, faCss3, faHtml5, faPhp, faReact, faWordpress } from '@fortawesome/free-brands-svg-icons';
+import { faBootstrap, faCss3, faHtml5, faPhp, faReact, faSass, faWordpress } from '@fortawesome/free-brands-svg-icons';
 
 const About = () => {
 
@@ -62,6 +62,7 @@ const About = () => {
                     <FontAwesomeIcon id="wordpress" icon={faWordpress} ></FontAwesomeIcon>
                      </div>
                 </div>
+               
             
                 </div>
             </div>

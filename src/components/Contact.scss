@@ -125,6 +125,10 @@
         }
     }
     .spaceimg{
-        display: none;
-            }
+        transform: rotate(180deg);
+        bottom: 0;
+        width: 70%;
+        left: 15%;
+        top: 60%;
+        }
 }
