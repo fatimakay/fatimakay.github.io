@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import Loader from 'react-loaders';
 import AnimatedWord from './AnimatedWord';
-import Space from '../assets/images/space.png';
 import emailjs from "emailjs-com";
 import './Contact.scss';
 const Contact = () => {
@@ -62,7 +61,7 @@ const Contact = () => {
                    
                 </div>
             </div>
-            <img className="spaceimg" src={Space}></img>
+            <img className="spaceimg" src='https://ucarecdn.com/5d5e0874-d871-40e6-b9ab-2fe51d13372d/-/preview/-/quality/smart/-/format/auto/'></img>
         </div>
      <Loader type="line-scale-pulse-out"/>
 

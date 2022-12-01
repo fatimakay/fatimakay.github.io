@@ -76,7 +76,13 @@
 *::placeholder{
     color: white; 
 }
-
+@media  screen and (max-width: 992px){
+.about-page{
+    .textarea{
+        width: 50%;
+}
+}
+}
 @media  screen and (max-width: 768px){
 
     .textarea{

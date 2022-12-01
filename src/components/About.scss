@@ -4,7 +4,6 @@
     right: 1%;
     position: absolute;
     animation: fadeInRight 1.5s 2.6s backwards;
-
     }  
 }
 .skills{
@@ -39,7 +38,16 @@
   
 
 }
-
+@media  screen and (max-width: 992px){
+    .profilepic{
+    img{
+    width: 400px;
+    right: -25%;
+    position: absolute;
+    top: 10%;
+    }
+}
+}
 @media  screen and (max-width: 768px){
     .profilepic{
     img{

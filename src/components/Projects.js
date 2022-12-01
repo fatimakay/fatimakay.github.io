@@ -1,16 +1,8 @@
-import { faArrowRight, faScrewdriver, faWrench } from "@fortawesome/free-solid-svg-icons";
-import { useEffect, useLayoutEffect, useState } from "react";
-import Memoed from '../assets/images/memoed.PNG'
-import QuizToit from '../assets/images/quiztoit.PNG'; 
-import Luxescope from '../assets/images/luxescope.PNG';
-import LandingPage from '../assets/images/landingpage.PNG';
-import Arrow from '../assets/images/arrow.png'; 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useEffect, useState } from "react";
 import scroller from '../assets/images/scroll.png';
 import Loader from "react-loaders";
 import AnimatedWord from "./AnimatedWord";
 import './Projects.scss';
-import { Link } from "react-router-dom";
 
 const Projects = () => {
 
@@ -24,7 +16,7 @@ const Projects = () => {
         <>
          <div className="container projects-page">
             <div className="textarea">
-                <img class="scrollimg" src={scroller}></img>
+                <img className="scrollimg" src={scroller}></img>
                 <div className="row row-cols-1 row-cols-md-2 ">
                 <div className="col mb-5 ">
                 <div className="mainheading">
@@ -39,7 +31,7 @@ const Projects = () => {
                     </div>
                     <div className="projectslist h-100 col mb-5">
                         <div className="card mb-5">
-                            <img src={Memoed} className="card-img-top "/>
+                            <img src='https://ucarecdn.com/a263d505-1ca3-4b88-b621-f077d34318a7/-/preview/-/quality/smart/-/format/auto/' className="card-img-top "/>
                             <div className="card-body">
                                 <h5 className="card-title">Memoed - Notes Taking App</h5>
                                     <p className="card-text">A basic notes taking application built using ReactJS.
@@ -53,7 +45,7 @@ const Projects = () => {
                             </div>
                         </div>
                         <div className="card mb-5">
-                            <img src={Luxescope} className="card-img-top "/>
+                            <img src='https://ucarecdn.com/15658a0e-b80e-480c-a7d8-2f36be332567/-/preview/-/quality/smart/-/format/auto/' className="card-img-top "/>
                             <div className="card-body">
                                 <h5 className="card-title">luxescope - Fictional Watch Store</h5>
                                     <p className="card-text">A fake ecommerce website built using 
@@ -67,7 +59,7 @@ const Projects = () => {
                             </div>
                         </div>
                         <div className="card mb-5">
-                            <img src={LandingPage}
+                            <img src='https://ucarecdn.com/5b7930c1-fc49-406b-b11d-c1c79930289b/-/preview/-/quality/smart/-/format/auto/'
                             className="card-img-top  " alt="..."/>
                             <div className="card-body">
                                 <h5 className="card-title">Travel Landing Page Design</h5>
@@ -81,7 +73,7 @@ const Projects = () => {
                             </div>
                         </div>
                         <div className="card mb-5">
-                            <img src={QuizToit} 
+                            <img src='https://ucarecdn.com/b60bef1d-2a16-4bf7-9aad-ddb4b3fc18e1/-/preview/-/quality/smart/-/format/auto/'
                             className="card-img-top  " alt="..."/>
                             <div className="card-body">
                                 <h5 className="card-title">Quiz App</h5>

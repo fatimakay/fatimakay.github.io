@@ -1,11 +1,9 @@
 import './About.scss'
 import AnimatedWord from './AnimatedWord';
-import profilepic from '../assets/images/profilepic.png';
 import { useEffect, useState } from 'react';
 import Loader from 'react-loaders';
-import { faSquare } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBootstrap, faCss3, faHtml5, faPhp, faReact, faSass, faWordpress } from '@fortawesome/free-brands-svg-icons';
+import { faBootstrap, faCss3, faHtml5, faReact, faWordpress } from '@fortawesome/free-brands-svg-icons';
 
 const About = () => {
 
@@ -36,38 +34,37 @@ const About = () => {
                 <h2>
                 <AnimatedWord letterClass={letterClass} strArray={['Skills']}/>
                 </h2>
-                <div class="skills mb-5 w-75">
-                <div class="card text-center" >
-                    <div class="card-body">
+                <div className="skills mb-5 w-75">
+                <div className="card text-center" >
+                    <div className="card-body">
                     <FontAwesomeIcon id="html" icon={faHtml5} ></FontAwesomeIcon>
                      </div>
                 </div>
-                <div class="card text-center">
-                    <div class="card-body">
+                <div className="card text-center">
+                    <div className="card-body">
                     <FontAwesomeIcon id="css" icon={faCss3} ></FontAwesomeIcon>
                      </div>
                 </div>
-                <div class="card text-center">
-                    <div class="card-body">
+                <div className="card text-center">
+                    <div className="card-body">
                     <FontAwesomeIcon id="react" icon={faReact} ></FontAwesomeIcon>
                      </div>
                 </div>
-                <div class="card text-center">
-                    <div class="card-body">
+                <div className="card text-center">
+                    <div className="card-body">
                     <FontAwesomeIcon id="bootstrap" icon={faBootstrap} ></FontAwesomeIcon>
                      </div>
                 </div>
-                <div class="card text-center">
-                    <div class="card-body">
+                <div className="card text-center">
+                    <div className="card-body">
                     <FontAwesomeIcon id="wordpress" icon={faWordpress} ></FontAwesomeIcon>
                      </div>
                 </div>
-               
-            
+
                 </div>
             </div>
             <div className="profilepic">
-                    <img src={profilepic}/>
+                    <img src='https://ucarecdn.com/98a19529-903a-4385-a45a-00fabca95ab1/'/>
             </div>
         </div>
         <Loader type="line-scale-pulse-out"/>

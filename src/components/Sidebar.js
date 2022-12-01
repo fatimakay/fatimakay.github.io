@@ -1,6 +1,4 @@
 import './Sidebar.scss'
-import LogoF from '../assets/images/FK-logo.png'
-import LogoSubtitle from '../assets/images/FK-sub.png'
 import { Link, NavLink } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {  faEnvelope, faHome, faMessage, faScrewdriverWrench, faUser } from '@fortawesome/free-solid-svg-icons'
@@ -10,19 +8,19 @@ const Sidebar = () => {
     return (
        <div className="nav-bar">
         <Link className="logo" to="/">
-        <img src={LogoF} alt ="logo"/> 
+        <img src='https://ucarecdn.com/bb8bc692-ccbd-4b7c-99df-d9cb0a1dd9de/-/preview/400x400/' alt ="logo"/> 
          </Link>
          <nav>
-          <NavLink exact="true" className="home-link" activeClassName="active" to="/">
+          <NavLink exact="true" className="home-link active"  to="/">
             <FontAwesomeIcon icon={faHome} color="#4d4d43"/>
           </NavLink>
-          <NavLink exact="true" activeClassName="active" className="about-link" to="/about">
+          <NavLink exact="true"  className="about-link active" to="/about">
             <FontAwesomeIcon icon={faUser} color="#4d4d43"/>
           </NavLink>
-          <NavLink exact="true" activeClassName="active" className="project-link" to="/projects">
+          <NavLink exact="true" className="project-link active" to="/projects">
             <FontAwesomeIcon icon={faScrewdriverWrench} color="#4d4d43"/>
           </NavLink>
-          <NavLink exact="true" activeClassName="active" className="contact-link" to="/contact">
+          <NavLink exact="true" className="contact-link active" to="/contact">
             <FontAwesomeIcon icon={faMessage} color="#4d4d43"/>
           </NavLink>
           </nav> 

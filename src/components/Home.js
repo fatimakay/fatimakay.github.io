@@ -1,13 +1,10 @@
 import { Link } from 'react-router-dom';
-import LogoF from '../assets/images/FK-logo.png';
-import Planet from '../assets/images/planets.png';
 import Rocket from '../assets/images/rocketship.png';
 import './Layout.scss'; 
 import './Home.scss';
 import AnimatedWord from './AnimatedWord';
 import { useEffect, useState } from 'react';
 import Loader from 'react-loaders';
-import { useLayoutEffect } from 'react';
 
 const Home = () => {
 
@@ -34,7 +31,7 @@ const Home = () => {
                 <h2>Front-end Developer</h2>
                 <Link to="/contact" className='flat-button'>CONTACT ME</Link>
             </div>
-            <img className="planet" src={Planet}></img>
+            <img className="planet" src='https://ucarecdn.com/648aa368-c8a3-4dbc-bcf5-0e7cad5c74ca/-/preview/-/quality/smart/-/format/auto/'></img>
             <img className="rocketship" src={Rocket}></img>
         </div>
 
