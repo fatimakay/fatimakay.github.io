@@ -104,19 +104,20 @@ ul{
                     content: 'HOME'; 
                     }
                 }
+ 
             }
           
-                a.about-link{
+                a#about-link{
                     &:after{
                         content: 'ABOUT'; 
                     }
                 }
-                a.project-link{
+                a#project-link{
                     &:after{
                         content: 'PROJECTS'; 
                     }
                 }
-                a.contact-link{
+                a#contact-link{
                     &:after{
                         content: 'CONTACT'; 
                     }

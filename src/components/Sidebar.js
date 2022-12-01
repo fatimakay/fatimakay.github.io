@@ -4,6 +4,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {  faEnvelope, faHome, faMessage, faScrewdriverWrench, faUser } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
+const classNameFunc = ({ isActive }) => (isActive ? "active" : "");
+
 const Sidebar = () => {
     return (
        <div className="nav-bar">
@@ -11,16 +13,16 @@ const Sidebar = () => {
         <img src='https://ucarecdn.com/bb8bc692-ccbd-4b7c-99df-d9cb0a1dd9de/-/preview/400x400/' alt ="logo"/> 
          </Link>
          <nav>
-          <NavLink exact="true" className="home-link active"  to="/">
+          <NavLink exact="true" id="home-link" className={classNameFunc} to="/">
             <FontAwesomeIcon icon={faHome} color="#4d4d43"/>
           </NavLink>
-          <NavLink exact="true"  className="about-link active" to="/about">
+          <NavLink exact="true"  id="about-link" className={classNameFunc} to="/about">
             <FontAwesomeIcon icon={faUser} color="#4d4d43"/>
           </NavLink>
-          <NavLink exact="true" className="project-link active" to="/projects">
+          <NavLink exact="true" id="project-link" className={classNameFunc} to="/projects">
             <FontAwesomeIcon icon={faScrewdriverWrench} color="#4d4d43"/>
           </NavLink>
-          <NavLink exact="true" className="contact-link active" to="/contact">
+          <NavLink exact="true" id="contact-link" className={classNameFunc} to="/contact">
             <FontAwesomeIcon icon={faMessage} color="#4d4d43"/>
           </NavLink>
           </nav> 
