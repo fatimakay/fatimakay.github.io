@@ -19,10 +19,10 @@ const About = () => {
         <div className="container about-page">
             <div className="textarea">
                 <h1>
-                    <AnimatedWord letterClass={letterClass} strArray={['About']}/>&nbsp;
-                    <AnimatedWord letterClass={letterClass} strArray={['Me']}/>
+                    <AnimatedWord letterClass={letterClass} strArray={['ABOUT']}/>&nbsp;
+                    <AnimatedWord letterClass={letterClass} strArray={['ME']}/>
                 </h1>
-                <p>Welcome to my mini portfolio website! My name is Fatima Khan. I'm a CS Grad from 
+                <p>Welcome to my mini portfolio website! My name is Fatima Khan. I'm a CS graduate from 
                     Bahria University, Islamabad. I'm an aspiring front-end developer looking to work in an 
                     established IT company where I can create beautiful and interactive websites.
                 </p>
@@ -32,7 +32,7 @@ const About = () => {
                     Currently, I am working on improving my Javascript skills and using the ReactJS framework.
                 </p>
                 <h2>
-                <AnimatedWord letterClass={letterClass} strArray={['Skills']}/>
+                <AnimatedWord letterClass={letterClass} strArray={['SKILLS']}/>
                 </h2>
                 <div className="skills mb-5 w-75">
                 <div className="card text-center" >

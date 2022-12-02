@@ -22,8 +22,8 @@ const Projects = () => {
                 <div className="mainheading">
             
                 <h1>              
-                 <AnimatedWord letterClass={letterClass} strArray={['My']}/>&nbsp;
-                 <AnimatedWord letterClass={letterClass} strArray={['Work']}/>
+                 <AnimatedWord letterClass={letterClass} strArray={['MY']}/>&nbsp;
+                 <AnimatedWord letterClass={letterClass} strArray={['WORK']}/>
                 </h1>
                 <p>A collection of some of my projects.</p>
             </div>

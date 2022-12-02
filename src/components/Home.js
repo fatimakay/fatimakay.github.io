@@ -9,9 +9,9 @@ import Loader from 'react-loaders';
 const Home = () => {
 
     const[letterClass, setLetterClass] = useState('text-animate');
-    const hello = ['Hello,'];  
-    const firstName = ['Fatima '];
-    const lastName = [' Khan'];
+    const hello = ['HELLO,'];  
+    const firstName = ['FATIMA '];
+    const lastName = [' KHAN'];
 
     useEffect(() => {
          setLetterClass('text-animate-hover')
@@ -24,7 +24,7 @@ const Home = () => {
             <div className="mainheading">
                 <h1>              
                  <AnimatedWord letterClass={letterClass} strArray={hello}/>
-                <br/> <span className={letterClass}>I'm</span>&nbsp;
+                <br/> <span className={letterClass}>I'M</span>&nbsp;
                 <AnimatedWord letterClass={letterClass} strArray={firstName}/>&nbsp;
                 <AnimatedWord letterClass={letterClass} strArray={lastName} />
                 </h1>

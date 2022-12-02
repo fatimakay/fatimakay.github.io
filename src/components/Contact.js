@@ -31,9 +31,9 @@ const Contact = () => {
         <div className="container contact-page ">
             <div className="textarea">
                 <h1>
-                    <AnimatedWord letterClass={letterClass} strArray={['Get']}/>&nbsp;
-                    <AnimatedWord letterClass={letterClass} strArray={['in']}/>&nbsp;
-                    <AnimatedWord letterClass={letterClass} strArray={['Touch']}/>
+                    <AnimatedWord letterClass={letterClass} strArray={['GET']}/>&nbsp;
+                    <AnimatedWord letterClass={letterClass} strArray={['IN']}/>&nbsp;
+                    <AnimatedWord letterClass={letterClass} strArray={['TOUCH']}/>
 
                 </h1>
                 <p>{statusMessage}</p>
