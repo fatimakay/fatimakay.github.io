@@ -1,7 +1,7 @@
 import './Sidebar.scss'
 import { Link, NavLink } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {  faEnvelope, faHome, faMessage, faScrewdriverWrench, faUser } from '@fortawesome/free-solid-svg-icons'
+import {  faEnvelope, faFile, faHome, faMessage, faScrewdriverWrench, faUser } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 const classNameFunc = ({ isActive }) => (isActive ? "active" : "");
@@ -26,8 +26,11 @@ const Sidebar = () => {
           <NavLink exact="true" id="contact-link" className={classNameFunc} to="/contact">
             <FontAwesomeIcon icon={faMessage} color="#4d4d43"/>
           </NavLink>
+          <NavLink exact="true" id="resume-link" className={classNameFunc} to="/resume">
+            <FontAwesomeIcon icon={faFile} color="#4d4d43"/>
+          </NavLink>
           </nav> 
-          <ul>
+          <ul >
             <li>
               <a target="_blank" rel='norefferer' href='https://www.linkedin.com/in/fatimakay/'>
                 <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e"/>
