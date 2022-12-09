@@ -8,7 +8,8 @@ const classNameFunc = ({ isActive }) => (isActive ? "active" : "");
 
 const Sidebar = () => {
     return (
-       <div className="nav-bar">
+     
+        <div className="nav-bar">
         <Link className="logo" to="/">
         <img src='https://ucarecdn.com/bb8bc692-ccbd-4b7c-99df-d9cb0a1dd9de/-/preview/400x400/' alt ="logo"/> 
          </Link>
@@ -44,7 +45,8 @@ const Sidebar = () => {
             </li>
           </ul>
         
-       </div>
+       </div> 
+      
       );
 }
  

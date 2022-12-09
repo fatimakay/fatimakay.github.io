@@ -30,6 +30,20 @@ const Projects = () => {
             
                     </div>
                     <div className="projectslist h-100 col mb-5">
+                    <div className="card mb-5">
+                            <img src='https://ucarecdn.com/6aa6e755-bf46-4142-92ed-7e7712a77d01/-/preview/-/quality/smart/-/format/auto/' className="card-img-top "/>
+                            <div className="card-body">
+                                <h5 className="card-title">Weather App</h5>
+                                    <p className="card-text">A weather app developed using the OpenWeatherMap API, with changing
+                                    backgrounds as per the weather. </p>
+                            </div>
+                            <div className="card-footer">
+                            <a href="https://github.com/fatimakay/react-weather-app" target="_blank">
+                                <button className="githubbtn btn">View on Github</button></a>
+                                <a href="fatimakay.github.io/react-weather-app/" target="_blank">
+                                    <button className="livebtn btn">Live Demo</button></a>
+                            </div>
+                        </div>
                         <div className="card mb-5">
                             <img src='https://ucarecdn.com/a263d505-1ca3-4b88-b621-f077d34318a7/-/preview/-/quality/smart/-/format/auto/' className="card-img-top "/>
                             <div className="card-body">

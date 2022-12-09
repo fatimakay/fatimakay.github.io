@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     background: #000000; 
-    width: 80px; 
+    width: 85px; 
     height: 100%; 
     position: absolute; 
     top: 0; 
@@ -88,7 +88,8 @@ ul{
             a{
                 &:after{
                     content: ''; 
-                    font-size: 10px; 
+                    font-size: 12px; 
+                    font-weight: bold;
                     letter-spacing: 2px; 
                     position: absolute;
                     bottom: 0; 
@@ -104,9 +105,7 @@ ul{
                     content: 'HOME'; 
                     }
                 }
- 
             }
-          
                 a#about-link{
                     &:after{
                         content: 'ABOUT'; 
