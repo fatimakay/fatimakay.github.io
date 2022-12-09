@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.7e168552.css",
-    "main.js": "/static/js/main.5580028f.js",
+    "main.css": "/static/css/main.734df01e.css",
+    "main.js": "/static/js/main.d10558d9.js",
     "static/js/787.90147cfc.chunk.js": "/static/js/787.90147cfc.chunk.js",
     "static/media/Oswald-VariableFont_wght.ttf": "/static/media/Oswald-VariableFont_wght.46d7853f0185f6bf0c93.ttf",
     "static/media/Oswald-Light.ttf": "/static/media/Oswald-Light.0db1d0c56bdf030d9f31.ttf",
@@ -9,12 +9,12 @@
     "static/media/helvetica-neu.ttf": "/static/media/helvetica-neu.8a19678078a6b21c8057.ttf",
     "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/index.html",
-    "main.7e168552.css.map": "/static/css/main.7e168552.css.map",
-    "main.5580028f.js.map": "/static/js/main.5580028f.js.map",
+    "main.734df01e.css.map": "/static/css/main.734df01e.css.map",
+    "main.d10558d9.js.map": "/static/js/main.d10558d9.js.map",
     "787.90147cfc.chunk.js.map": "/static/js/787.90147cfc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7e168552.css",
-    "static/js/main.5580028f.js"
+    "static/css/main.734df01e.css",
+    "static/js/main.d10558d9.js"
   ]
 }
