@@ -17,20 +17,32 @@ const Projects = () => {
          <div className="container projects-page">
             <div className="textarea">
                 <img className="scrollimg" src={scroller}></img>
-                <div className="row row-cols-1 row-cols-md-2 ">
-                <div className="col mb-5 ">
-                <div className="mainheading">
-            
-                <h1>              
-                 <AnimatedWord letterClass={letterClass} strArray={['MY']}/>&nbsp;
-                 <AnimatedWord letterClass={letterClass} strArray={['WORK']}/>
-                </h1>
-                <p>A collection of some of my projects.</p>
-            </div>
-            
+                <div className="row ">
+                    <div className="col-sm-6 mb-5 ">
+                        <div className="mainheading">
+                            <h1>              
+                                <AnimatedWord letterClass={letterClass} strArray={['MY']}/>&nbsp;
+                                <AnimatedWord letterClass={letterClass} strArray={['WORK']}/>
+                            </h1>
+                            <p>A collection of some of my projects.</p>
+                        </div>
                     </div>
-                    <div className="projectslist h-100 col mb-5">
+                    <div className="projectslist col-sm-6  mb-5 ">
                     <div className="card mb-5">
+                            <img src='https://ucarecdn.com/8785ef4c-4013-4982-8ad1-c4b7122a42e0/-/preview/-/quality/smart/-/format/auto/' className="card-img-top "/>
+                            <div className="card-body">
+                                <h5 className="card-title">Blog Website</h5>
+                                    <p className="card-text">Developed a responsive, react-based front-end of a blogging site for 
+                                    a client with both light and dark modes. </p>
+                            </div>
+                            <div className="card-footer">
+                            <a href="https://github.com/alpha2207/blog" target="_blank">
+                                <button className="githubbtn btn">View on Github</button></a>
+                                <a href="alpha-blog-frontend.vercel.app/" target="_blank">
+                                    <button className="livebtn btn">Live Demo</button></a>
+                            </div>
+                        </div>
+                        <div className="card mb-5">
                             <img src='https://ucarecdn.com/6aa6e755-bf46-4142-92ed-7e7712a77d01/-/preview/-/quality/smart/-/format/auto/' className="card-img-top "/>
                             <div className="card-body">
                                 <h5 className="card-title">Weather App</h5>
