@@ -1,16 +1,22 @@
 import './Sidebar.scss'
 import { Link, NavLink } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {  faEnvelope, faFile, faHome, faMessage, faScrewdriverWrench, faUser } from '@fortawesome/free-solid-svg-icons'
+import {  faBars, faEnvelope, faFile, faHome, faMessage, faScrewdriverWrench, faUser } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { useState } from 'react'
 
 const classNameFunc = ({ isActive }) => (isActive ? "active" : "");
 
 const Sidebar = () => {
+  const [toggleMenu, setToggleMenu] = useState(false);
     return (
       <>
-  
-         <div className="nav-bar">
+          <div className="toggler">
+            <a href="#"  onClick={() => setToggleMenu(!toggleMenu)}>
+            <FontAwesomeIcon icon={faBars} size="3x" focusable="true"/> </a>
+          </div>
+        <div className={toggleMenu ? "wrapper" : null} onClick={() => setToggleMenu(false)}>
+        <div className={toggleMenu ? "navbar-mobile" : "nav-bar"}>
          <Link className="logo" to="/">
          <img src='https:ucarecdn.com/bb8bc692-ccbd-4b7c-99df-d9cb0a1dd9de/-/preview/400x400/' alt ="logo"/> 
           </Link>
@@ -48,8 +54,8 @@ const Sidebar = () => {
                </a>
              </li>
            </ul>
-        
         </div> 
+        </div>
       </>
       );
 }
