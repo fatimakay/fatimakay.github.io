@@ -13,6 +13,8 @@ const Projects = () => {
     return (
       <>
         <div id="projects-page" className="row">
+
+          {/*=== PAGE TITLE AND DESCRIPTION === */}
           <div className="col-11  d-flex flex-column justify-content-end ps-sm-5 align-items-center text-center text-sm-start align-items-sm-start">
             <h1 className="display-3">
               <AnimatedWord letterClass={letterClass} strArray={['MY']} />
@@ -22,11 +24,41 @@ const Projects = () => {
             <p className="fs-4">A collection of some of my projects.</p>
           </div>
 
+          {/*=== PROJECTS CARDS === */}
           <div
             id="projectslist"
             className="col-11 h-50 d-flex flex-column justify-contend-end"
           >
             <div className="row row-cols-1 row-cols-md-3 g-4">
+            <div className="col d-flex align-items-stretch">
+                <div className="card">
+                  <img
+                  src="https://ucarecdn.com/10be364e-bca7-4d0d-8142-195ba7c76717/-/preview/-/quality/smart/-/format/auto/"
+                    className="card-img-top"
+                    alt="..."
+                  />
+                  <div className="card-body">
+                    <h3 className="card-title">Nebula - Realtime Chat App</h3>
+                    <p className="card-text fs-5">
+                      A chat application which uses Firebase database to fetch conversations
+                      in realtime. 
+                    </p>
+                  </div>
+                  <div className="card-footer">
+                    <a href="https://github.com/fatimakay/nebula-chat-app" target="_blank">
+                      <button className="githubbtn btn fs-5">
+                        View on Github
+                      </button>
+                    </a>
+                    <a
+                      href="https://nebulachatapp.web.app"
+                      target="_blank"
+                    >
+                      <button className="livebtn btn fs-5">Live Demo</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
               <div className="col d-flex align-items-stretch">
                 <div className="card">
                   <img

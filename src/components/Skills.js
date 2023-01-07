@@ -22,6 +22,8 @@ const Skills = () => {
   return (
     <>
           <div id="skills-page" className="row h-100">
+
+            {/*=== PAGE TITLE AND DESCRIPTION === */}
               <div className="col-11 col-sm-6 col-md-7 col-lg-6 col-xl-6 d-flex flex-column justify-content-center ps-sm-5 align-items-center text-center text-sm-start align-items-sm-start justify-content-sm-center">
                 <h1 className='display-3'>
                   <AnimatedWord letterClass={letterClass} strArray={['MY']} />
@@ -33,6 +35,8 @@ const Skills = () => {
                 </h1>
                 <p className='fs-4'>These are the technologies I've worked with</p>
               </div>
+
+              {/*=== SKILLS LIST === */}
             <div className="col-11 col-sm-6 col-md-5 col-lg-6 col-xl-5 d-flex justify-content-center  align-items-sm-center justify-content-md-start justify-content-sm-center justify-content-lg-center  ">
               <div className="row row-cols-3">
                 <div className="col">
@@ -108,64 +112,6 @@ const Skills = () => {
                 </div>
                 </div>
               </div>
-              {/* <div className="card-group pt-5 gap-4 ">
-                <div className="card ">
-                  <img src={HTML} className="card-img-top" alt="..." />
-                  <div className="card-body">
-                    <h5 className="card-title">HTML</h5>
-                  </div>
-                </div>
-                <div className="card">
-                  <img src={CSS} className="card-img-top" alt="..." />
-                  <div className="card-body">
-                    <h5 className="card-title">CSS</h5>
-                  </div>
-                </div>
-                <div className="card">
-                  <img src={Javascript} className="card-img-top" alt="..." />
-                  <div className="card-body">
-                    <h5 className="card-title">Javascript</h5>
-                  </div>
-                </div>
-                <div className="card">
-                  <img src={React} className="card-img-top" alt="..." />
-                  <div className="card-body">
-                    <h5 className="card-title">React</h5>
-                  </div>
-                </div>
-                <div className="card">
-                  <img src={Github} className="card-img-top" alt="..." />
-                  <div className="card-body">
-                    <h5 className="card-title">Github</h5>
-                  </div>
-                </div>
-                <div className="card">
-                  <img src={Firebase} className="card-img-top" alt="..." />
-                  <div className="card-body">
-                    <h5 className="card-title">Firebase</h5>
-                  </div>
-                </div>
-                <div className="card">
-                  <img src={SASS} className="card-img-top" alt="..." />
-                  <div className="card-body">
-                    <h5 className="card-title">SASS</h5>
-                  </div>
-                </div>
-                <div className="card">
-                  <img src={Tailwind} className="card-img-top" alt="..." />
-                  <div className="card-body">
-                    <h5 className="card-title">Tailwind</h5>
-                  </div>
-                </div>
-                <div className="card">
-                  <img src={Bootstrap} className="card-img-top" alt="..." />
-                  <div className="card-body">
-                    <h5 className="card-title">Bootstrap</h5>
-                  </div>
-                </div>
-                
-               
-              </div> */}
             </div>
             </div>
     </>

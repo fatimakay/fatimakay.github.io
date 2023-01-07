@@ -36,6 +36,8 @@ const Contact = () => {
   return (
     <>
       <div id="contact-page" className="row h-100">
+
+        {/*=== PAGE TITLE AND DESCRIPTION === */}
         <div className="col-11 col-sm-6 col-md-7 col-lg-6 col-xl-6  d-flex flex-column justify-content-center ps-sm-5 align-items-center text-center text-sm-start align-items-sm-start">
           <h1 className='display-3'>
             <AnimatedWord letterClass={letterClass} strArray={['GET']} />
@@ -91,6 +93,8 @@ const Contact = () => {
             </form>
           </div>
         </div>
+
+        {/*=== DECOR IMAGE === */}
         <div
           id="imgwrapper"
           className="col-11 col-sm-6 col-md-5 col-lg-6 col-xl-5 d-none d-sm-block "

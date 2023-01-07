@@ -11,6 +11,8 @@ const Sidebar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
     return (
       <>
+
+      {/*=== Toggler only for mobile view  === */}
       <div className="toggler">
             <a href="#"  onClick={() => setToggleMenu(!toggleMenu)}>
             <Menu size="20" color="#6fffe9"/>
@@ -22,6 +24,8 @@ const Sidebar = () => {
         <img id="logo" src={Logo}/>
         <span>Fatima Khan</span>
         </Link>
+
+        {/*=== MAIN NAV MENU === */}
       <nav className=' d-flex flex-column align-items-center gap-4'>
           <NavLink exact="true" id="home-link" title='Home' className={`${classNameFunc} d-flex gap-5`} to="/">
             <Home  size="30"/>
@@ -45,6 +49,7 @@ const Sidebar = () => {
            </NavLink>
       </nav>
       
+      {/*=== SOCIAL LINKS === */}
       <ul className='d-flex flex-column align-items-center gap-3'>
              <li>
                <a target="_blank" rel='norefferer' title="LinkedIn" href='https:www.linkedin.com/in/fatimakay/'>
@@ -64,32 +69,6 @@ const Sidebar = () => {
            </ul>
       </div>
       </div>
-          {/* <header>
-            <nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse bg-white">
-              <div class="position-sticky">
-                <div class="list-group list-group-flush mx-3 mt-4">
-                <NavLink exact="true" id="home-link" className={`list-group-item list-group-item-action py-2 ripple ${classNameFunc}`} to="/">
-                  <FontAwesomeIcon icon={faHome} color="#4d4d43"/>
-                </NavLink>
-                <NavLink exact="true"  id="about-link" className={`list-group-item list-group-item-action py-2 ripple ${classNameFunc}`} to="/about">
-                  <FontAwesomeIcon icon={faUser} color="#4d4d43"/>
-                </NavLink>
-                <NavLink exact="true" id="project-link" className={`list-group-item list-group-item-action py-2 ripple ${classNameFunc}`} to="/projects">
-                  <FontAwesomeIcon icon={faScrewdriverWrench} color="#4d4d43"/>
-                </NavLink>
-                <NavLink exact="true" id="contact-link" className={`list-group-item list-group-item-action py-2 ripple ${classNameFunc}`} to="/contact">
-                  <FontAwesomeIcon icon={faMessage} color="#4d4d43"/>
-                </NavLink>
-                <NavLink exact="true" id="resume-link" className={`list-group-item list-group-item-action py-2 ripple ${classNameFunc}`} to="/resume">
-                  <FontAwesomeIcon icon={faFile} color="#4d4d43"/>
-                </NavLink>
-                </div>
-              </div>
-            </nav>
-
-           
-          </header> */}
-
       </>
       );
 }
