@@ -52,12 +52,12 @@ const Sidebar = () => {
       {/*=== SOCIAL LINKS === */}
       <ul className='d-flex flex-column align-items-center gap-3'>
              <li>
-               <a target="_blank" rel='norefferer' title="LinkedIn" href='https:www.linkedin.com/in/fatimakay/'>
+               <a target="_blank" rel='norefferer' title="LinkedIn" href='https://www.linkedin.com/in/fatimakay/'>
                <Linkedin size="20"/>
                </a>
              </li>
              <li>
-               <a target="_blank" rel='norefferer' title="Github" href='https:github.com/fatimakay'>
+               <a target="_blank" rel='norefferer' title="Github" href='https://github.com/fatimakay'>
                <GitHub size="20"/>
                </a>
              </li>
