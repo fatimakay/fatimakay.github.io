@@ -1,53 +1,31 @@
-.homepage{
-
-    .mainheading{
-        position: absolute; 
-        left: 15%; //away from sidebar
-        top: 50%; //vertically centered
-        transform: translateY(-50%); 
-        width: 40%; 
-        max-height: 90%; 
-
-    }
+#homepage{
     h1{
         color: white; 
-        font-size: clamp(30px, 5.6vw, 5.6vw); 
-        margin: 0; 
         font-family: 'Oswald'; 
-        font-weight: 400;
         animation: fadeInUp 1s 1s backwards;
     }
     h2{
-        color: #a09e9e;
-        margin-top: 20px; 
-        font-weight: 400; 
-        font-size: 20px;
-        font-family: 'Oswald-Light'; 
-        letter-spacing: 3px;
+        color: #cccccc;
+        font-family: 'Raleway'; 
         animation: fadeIn 1s 2.0s backwards;
     }
-
     .flat-button{
-        color: #8EE3EF; 
-        font-size: 1.4vw; 
-        font-weight: 400;
+        color: #6fffe9; 
         letter-spacing: 4px;
         font-family: 'Oswald';
         text-decoration: none;
+        width: fit-content;
         padding: 10px 18px;
-        border: 1px solid #8EE3EF; 
-        margin-top: 25px; 
-        float: left; 
+        border: 1px solid #6fffe9; 
         animation: fadeInUp 1s 2.5s backwards; 
-        white-space: nowrap;
 
         &:hover{
-            background: #8EE3EF;
-            color: #333; 
+            background: #6fffe9;
+            color: #000000; 
         }
         &:focus{
-            background: #8EE3EF;
-            color: #333; 
+            background: #6fffe9;
+            color: #000000; 
         }
 
     }
@@ -55,24 +33,18 @@
         display:none;
     }
     .planet{
-        position: absolute; 
-        right: 5%; //away from sidebar
-        top: 50%; //vertically centered
-        transform: translateY(-50%);       
-        width: 40%; 
+        animation: fadeInUp 1s 1s backwards;
         &:hover + .rocketship{
            
-                display: inline;
-                position: absolute; 
-                left: 30%;
-                bottom: 45%; 
-                width: 20%; 
-                max-height: 90%; 
-                animation: move-diagonal 4s linear infinite  ;
-            
-        }
+            display: inline;
+            position: absolute; 
+            left: 30%;
+            bottom: 45%; 
+            width: 20% !important; 
+            max-height: 90%; 
+            animation: move-diagonal 3s linear infinite  ;   
     }
-   
+    }
 }
 @keyframes move-diagonal{
     0% {
@@ -82,78 +54,40 @@
     30%{
         opacity: 0.8
     }
-
 	100% {
 		transform: translate(500px, -500px);
 	}
-   
-
 }
 
-@media  screen and (max-width: 1024px){
-    .homepage{
-    .mainheading{
-        left: 12%; //away from sidebar
-        transform: translateY(-50%); 
-    }
-    h1{
+@media only screen and (width < 576px) {
+    #homepage{
         img{
-            width: 35px;
+           width: 70% !important;
+           object-fit: contain;
         }
-    }
-    .planet{
-        right: 8%; //away from sidebar
-    }
-}
-}
-
-@media  screen and (max-width: 768px){
-    .homepage{
-    .mainheading{
-        left: 13%; //away from sidebar
-    }
-    h1{
        
-        img{
-            width: 30px;
-        }
-    }
-    .flat-button{
-        font-size: 8px;
-        padding: 8px 16px;
-
-    }
-    .planet{
-        right: 6%; //away from sidebar
-    }
-}
-}
-@media only screen and (max-width: 500px){
-    .homepage{
-    .mainheading{
-        width: 75%; 
-    }
-    h1{
-        img{
-            width: 25px;
-        }
-    }
-    .planet{
-        display:none;
-    }
-    .rocketship{
-        display:none;
-    }
-}
-}
-
-@media only screen and (max-width: 320px){
-    .homepage{
-        .mainheading{
-            width: 100%;
-            left: 7%;
-        }
         
+    }
+}
+@media only screen and (width >= 768px){
+    #homepage{
+        img{
+            width: 90% !important;
+        }
+       
+    }
+}
+@media only screen and (width >= 1200px){
+    #homepage{
+        h1{
+            font-size: calc(1.625rem + 4.5vw);
+        }
+        h2{
+            font-size: calc(1.375rem + 1.5vw);
+        }
+        .flat-button{
+            font-size: calc(1.325rem + .9vw)!important;
+        }
     }
 
 }

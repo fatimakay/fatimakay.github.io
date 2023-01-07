@@ -1,41 +1,6 @@
-.projects-page{
-    .mainheading{
-        position: absolute; 
-        top: 50%; //vertically centered
-        left: 5%;
-        transform: translateY(-50%); 
-        max-height: 90%; 
-    }
-    .textarea{
-        
-        width: 95%;
-        height: 100%;
-        position: absolute; 
-        left: 10%;  
-        top: 50%; 
-        transform: translateY(-50%); 
-        vertical-align: middle;
-        display: table-cell;
-        max-height: 100%;
-        .row{
-            height: 90vh;
-            width: 97%;
-        }
-        .projectslist{
-            right: 1%;
-            overflow-y: scroll;
-        }
-        
-    }
-    .text-animate-hover{
-        &:hover{
-            color:white; 
-            
-        }
-    }
-}
+
 ::-webkit-scrollbar {
-    width: 0px;
+    width: 4px;
   }
   /* Track */
   ::-webkit-scrollbar-track {
@@ -43,80 +8,57 @@
   }
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: #888; 
+    background: #cccccc; 
   }
- .projectslist{
-    height: 100%; 
-.card{
-    width: 95%;
-    background: none;
-    &:hover{
-        box-shadow: #888 0px 1px 4px;
+ #projects-page{
+  height: 100vh; 
+  overflow-y: scroll;
+    img{
+        aspect-ratio: 16/9;
     }
-    font-family: 'Oswald-Light';
-
-}
-.card-title{
-    color: white;
-    font-size: clamp(12px, 1.4vw, 16px );
-    font-weight: bold;
-}
-p.card-text{
-    font-size: clamp(11px, 1.2vw, 16px );
-    color: white;
-    animation: none;
-}
-.btn{
-    border-radius: 0;
-}
-.githubbtn{
-    color: white;
-    border: 1px solid #8EE3EF;
-    font-size: clamp(12px, 1.1vw, 16px );
-    &:hover{
-        background-color: #8EE3EF;
-        color: black;
+    .card{
+        color: white;
+        background: #000000;
+        animation: fadeInUp 1s 2.3s backwards;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -ms-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+        &:hover{
+          transform: scale(1.06);
+        }
     }
-}
-.livebtn{
-    background-color: #8EE3EF;
-    font-size: clamp(12px, 1.1vw, 16px );
-    color: black;
-    &:hover{
-        background-color: #8ee4efaf;
+    .card-title{
+      font-family: 'Oswald';
     }
-}
-.card-img-top{
-    height: 19vw;
-}
+    .card-body{
+      font-family: 'Raleway';
+    }
+    button{
+        color: white;
+        font-family: 'Raleway';
+    }
+    .githubbtn{
+      border: 1px solid #6fffe9;
+      border-radius: 0;
+    }
+    .livebtn{
+      border-radius: 0;
+      background-color: #6fffe9;
+      color: black;
+    }
  }
-.scrollimg{
-    max-width: 20px; 
-    position: fixed;
-    right: 2%;
-    bottom: 10%;
-    animation: slideInDown 1.5s infinite ;
+@media only screen and (width < 576px){
+  
+::-webkit-scrollbar {
+  width: 0px;
 }
-
-@media only screen and (max-width: 576px){
-    .scrollimg{
-        display: none;
-    }
-    .projects-page{
-        .mainheading{
-            top: 15%; //vertically centered
-            left: 10%;
-            margin-bottom: 0px;
-            margin-top: 40px;
-
-        }
-    }
-    .projectslist{
-        height: 60%;
-        .card{
-            width: 75%;
-            left: 10%;
-        }
-    }
-
+/* Track */
+::-webkit-scrollbar-track {
+  background: none; 
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: white; 
+}
 }

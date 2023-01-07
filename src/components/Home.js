@@ -9,7 +9,7 @@ import Loader from 'react-loaders';
 const Home = () => {
 
     const[letterClass, setLetterClass] = useState('text-animate');
-    const hello = ['HELLO,'];  
+    const hello = ['HELLO, '];  
     const firstName = ['FATIMA '];
     const lastName = [' KHAN'];
 
@@ -18,25 +18,25 @@ const Home = () => {
     }, [])
 
     
-    return ( 
-        <>
-        <div className="container homepage mx-auto">
-            <div className="mainheading">
-                <h1>              
-                 <AnimatedWord letterClass={letterClass} strArray={hello}/>
-                <br/> <span className={letterClass}>I'M</span>&nbsp;
+    return (
+    <div id="homepage" className="row  vh-100">
+     <div className="col-11 col-sm-6 col-md-7 col-lg-6 col-xl-6 order-2 order-sm-1 mb-auto mb-sm-0 d-flex flex-column justify-content-center ps-sm-5 align-items-center text-center text-sm-start align-items-sm-start">
+           <h1 className='display-1'>               
+                 <AnimatedWord letterClass={letterClass} strArray={hello}/><br/>
+                 <span className={letterClass}>I'M</span>&nbsp;
                 <AnimatedWord letterClass={letterClass} strArray={firstName}/>&nbsp;
                 <AnimatedWord letterClass={letterClass} strArray={lastName} />
                 </h1>
-                <h2>Front-end Developer</h2>
-                <Link to="/contact" className='flat-button'>CONTACT ME</Link>
-            </div>
-            <img className="planet" src='https://ucarecdn.com/648aa368-c8a3-4dbc-bcf5-0e7cad5c74ca/-/preview/-/quality/smart/-/format/auto/'></img>
-            <img className="rocketship" src={Rocket}></img>
-        </div>
+                <h2 className='mt-sm-2 mt-lg-3 display-6'>Front-end Developer</h2>
+                <Link to="/contact" className='flat-button mt-2 mt-sm-3 mt-lg-4 fs-2'>CONTACT ME</Link>
+     </div> 
+     {/* stopped here -- add line break in h1 after im  */}
+     <div className="col-11 col-sm-6 col-md-5 col-lg-6 col-xl-5 order-1 order-sm-2 d-flex justify-content-center align-items-end align-items-sm-center justify-content-md-start justify-content-sm-center justify-content-lg-center ">
+     <img className="planet mw-100 px-lg-3 " src='https://ucarecdn.com/9de76d9e-7029-4465-a820-a910fdf26065/-/preview/-/quality/smart/-/format/auto/'></img>
+     <img className="rocketship " src={Rocket}></img>
+     </div>
+     </div>
 
-        <Loader type="line-scale-pulse-out"/>
-        </>
      );
 }
  

@@ -1,6 +1,6 @@
 //global styles  are defined here
 
-$primary-color: #8EE3EF; 
+$primary-color: #6fffe9; 
 @import 'animate.css';
 @import '~loaders.css/src/animations/line-scale-pulse-out.scss';
 
@@ -16,23 +16,12 @@ $primary-color: #8EE3EF;
   font-family: 'Oswald'; 
   src: url('./assets/fonts/Oswald-VariableFont_wght.ttf') format('truetype');
 }
+@font-face {
+  font-family: 'Raleway'; 
+  src: url('./assets/fonts/Raleway-Regular.ttf') format('truetype');
+}
 
 //default font for input and text areas
 input, textarea{
   font-family: 'Helvetica Neue'; 
-}
-
-.loader-active{
-  display: block; 
-  position: absolute;
-  left: 0; 
-  right: 0; 
-  margin: auto; 
-  top: 0; 
-  bottom: 0; 
-  width: 50px; 
-  height: 50px;
-  animation: fadeOut 1s 0.5s; 
-  animation-fill-mode: forwards;
-  
 }

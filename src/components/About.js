@@ -1,75 +1,46 @@
 import './About.scss'
-import AnimatedWord from './AnimatedWord';
-import { useEffect, useState } from 'react';
-import Loader from 'react-loaders';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBootstrap, faCss3, faHtml5, faReact, faWordpress } from '@fortawesome/free-brands-svg-icons';
+import AnimatedWord from './AnimatedWord'
+import { useEffect, useState } from 'react'
+import Loader from 'react-loaders'
 
 const About = () => {
+  const [letterClass, setLetterClass] = useState('text-animate')
 
-    const[letterClass, setLetterClass] = useState('text-animate');
-
-    useEffect(() => {
- 
-          setLetterClass('text-animate-hover')
- 
-     }, [])
-    return ( 
-        <>
-        <div className="container about-page">
-            <div className="textarea">
-                <h1>
-                    <AnimatedWord letterClass={letterClass} strArray={['ABOUT']}/>&nbsp;
-                    <AnimatedWord letterClass={letterClass} strArray={['ME']}/>
-                </h1>
-                <p>Welcome to my mini portfolio website! My name is Fatima Khan. I'm a CS graduate from 
-                    Bahria University, Islamabad. I'm an aspiring front-end developer looking to work in an 
-                    established IT company where I can create beautiful and interactive websites.
-                </p>
-                <p>I'm constantly striving to increase my skillset in the field of web development.
-                    During my internship at Insource Pakistan, I learned how to work with a completely
-                    unfamiliar language, PHP, while effectively meeting my supervisor's milestones.
-                    Currently, I am working on improving my Javascript skills and using the ReactJS framework.
-                </p>
-                <h2>
-                <AnimatedWord letterClass={letterClass} strArray={['SKILLS']}/>
-                </h2>
-                <div className="skills mb-5 w-75">
-                <div className="card text-center" >
-                    <div className="card-body">
-                    <FontAwesomeIcon id="html" icon={faHtml5} ></FontAwesomeIcon>
-                     </div>
-                </div>
-                <div className="card text-center">
-                    <div className="card-body">
-                    <FontAwesomeIcon id="css" icon={faCss3} ></FontAwesomeIcon>
-                     </div>
-                </div>
-                <div className="card text-center">
-                    <div className="card-body">
-                    <FontAwesomeIcon id="react" icon={faReact} ></FontAwesomeIcon>
-                     </div>
-                </div>
-                <div className="card text-center">
-                    <div className="card-body">
-                    <FontAwesomeIcon id="bootstrap" icon={faBootstrap} ></FontAwesomeIcon>
-                     </div>
-                </div>
-                <div className="card text-center">
-                    <div className="card-body">
-                    <FontAwesomeIcon id="wordpress" icon={faWordpress} ></FontAwesomeIcon>
-                     </div>
-                </div>
-
-                </div>
-            </div>
-            <div className="profilepic">
-                    <img src='https://ucarecdn.com/98a19529-903a-4385-a45a-00fabca95ab1/'/>
-            </div>
+  useEffect(() => {
+    setLetterClass('text-animate-hover')
+  }, [])
+  return (
+    <>
+      <div id="about-page" className="row h-100">
+        <div className="col-11 col-sm-6 col-md-7 col-lg-6 col-xl-6 order-2 order-sm-1 mb-auto mb-sm-0 d-flex flex-column justify-content-center ps-sm-5 align-items-center text-center text-sm-start align-items-sm-start">
+          <h1 className='display-3'> 
+            <AnimatedWord letterClass={letterClass} strArray={['ABOUT']} />
+            &nbsp;
+            <AnimatedWord letterClass={letterClass} strArray={['ME']} />
+          </h1>
+          <p className='fs-4'>
+            Welcome to my mini portfolio website! My name is Fatima Khan and I'm an aspiring
+            front-end developer. I graduated with a Computer Science degree from Bahria University, 
+            where I fell in love with web development and have been pursuing it since. I've taught 
+            myself numerous tools and technologies by building personal projects and freelancing, 
+            which you can view on my 'Projects' page. 
+          </p>
+          <p className='fs-4'>
+            I'm constantly striving to increase my knowledge in the world of web
+            development. During my internship at Insource Pakistan, I learned
+            how to work with a completely unfamiliar language, PHP, while
+            effectively meeting my supervisor's milestones. I am now looking for a junior dev 
+            position to finally kickstart my career and learn among professionals.
+          </p>
+          <h2></h2>
         </div>
-        <Loader type="line-scale-pulse-out"/>
-        </>
-     );
+        <div id="imgwrapper" className="col-11 col-sm-6 col-md-5 col-lg-6 col-xl-5 order-1 order-sm-2 d-flex justify-content-center align-items-end align-items-sm-center justify-content-md-start justify-content-sm-center justify-content-lg-center  ">
+        <img className='d-flex'
+        src='https://ucarecdn.com/c33bbd0e-8cfd-463d-8be8-0f3b7d04eb08/-/preview/-/quality/smart/-/format/auto/'/>
+        </div>
+      </div>
+    </>
+  )
 }
- 
-export default About;
+
+export default About

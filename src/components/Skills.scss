@@ -1,0 +1,28 @@
+#skills-page{
+    .card{
+        background: #000000;
+        animation: fadeInUp 1s 1.8s backwards;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -ms-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+        &:hover{
+          transform: scale(1.06);
+        }
+        .card-title{
+            font-family: 'Raleway';
+        }
+        img{
+            max-width: 100px;
+        }
+    }
+}
+@media only screen and (width <576px){
+    #skills-page{
+        .card{
+            img{
+                max-width: 50px;
+            }
+        }
+    }
+}

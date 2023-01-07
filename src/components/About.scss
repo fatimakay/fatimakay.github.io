@@ -1,70 +1,29 @@
-.profilepic{
+#about-page{
     img{
-    width: 500px;
-    right: 1%;
-    position: absolute;
-    animation: fadeInRight 1.5s 2.6s backwards;
-    }  
+        max-width: 80%;
+        // animation: fadeInRight 1.5s 2.6s backwards;
+    }
 }
-.skills{
-    display: flex;
-    flex-wrap: wrap;
-    animation: fadeInUp 1s 2.6s backwards;
-    .card{
-        box-shadow: inset 0px 0px 25px 13px #262B2B;
-        display: flex;
-        background-color: white !important;
-        border: none;
-      } 
-    svg{
-        font-size: clamp(30px, 30px, 30px);
-        border-color: rgba(0,0,0,0.6);
+@media only screen and (width >= 576px) {
+    #about-page{
+        img{
+            animation: fadeInRight 1.5s 2.6s backwards;
+        }
     }
-    #html{
-        color: #E44D26;
-    }
-    #css{
-       color: #264de4;
-    }
-    #bootstrap{
-       color: #563d7c;
-    }
-    #react{
-        color: #61dbfb;
-    }
-    #wordpress{
-        color:  #00749C; 
-    }
-  
+}
 
-}
-@media  screen and (max-width: 992px){
-    .profilepic{
-    img{
-    width: 400px;
-    right: -25%;
-    position: absolute;
-    top: 10%;
+@media only screen and (width < 576px) {
+    #about-page{
+        #imgwrapper{
+        img{
+            max-width: 35%;
+            height: auto;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: rgba(255, 255, 255, 0.559) 0px 1px 4px;
+            object-position: top right;
+            aspect-ratio: 1/1;
+        }
     }
-}
-}
-@media  screen and (max-width: 768px){
-    .profilepic{
-    img{
-    width: 400px;
-    margin-left: 55%;
-    position: absolute;
-    top: 10%;
     }
-}
-}
-@media  screen and (max-width: 500px){
-    .profilepic{
-    img{
-        width: 270px;
-        z-index: -1;
-        top: 55%;
-        right: -13%;
-    }
-}
 }
