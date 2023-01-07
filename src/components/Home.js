@@ -22,7 +22,7 @@ const Home = () => {
     <div id="homepage" className="row  vh-100">
 
      {/*=== PAGE TITLE AND DESCRIPTION === */}
-     <div className="col-11 col-sm-6 col-md-7 col-lg-6 col-xl-6 order-2 order-sm-1 mb-auto mb-sm-0 d-flex flex-column justify-content-center ps-sm-5 align-items-center text-center text-sm-start align-items-sm-start">
+     <div  className="col-11 col-sm-6 col-md-7 col-lg-6 col-xl-6 order-2 order-sm-1 d-flex flex-column justify-content-start justify-content-sm-center ps-sm-5 align-items-center text-center text-sm-start align-items-sm-start">
            <h1 className='display-1'>               
                  <AnimatedWord letterClass={letterClass} strArray={hello}/><br/>
                  <span className={letterClass}>I'M</span>&nbsp;
@@ -34,7 +34,7 @@ const Home = () => {
      </div> 
 
      {/*=== DECOR IMAGE === */}
-     <div className="col-11 col-sm-6 col-md-5 col-lg-6 col-xl-5 order-1 order-sm-2 d-flex justify-content-center align-items-end align-items-sm-center justify-content-md-start justify-content-sm-center justify-content-lg-center ">
+     <div id="imagewrapper" className="col-11 col-sm-6 col-md-5 col-lg-6 col-xl-5 order-1 order-sm-2 d-flex justify-content-center align-items-end align-items-sm-center justify-content-md-start justify-content-sm-center justify-content-lg-center ">
      <img className="planet mw-100 px-lg-3 " src='https://ucarecdn.com/9de76d9e-7029-4465-a820-a910fdf26065/-/preview/-/quality/smart/-/format/auto/'></img>
      <img className="rocketship " src={Rocket}></img>
      </div>
