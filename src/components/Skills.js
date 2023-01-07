@@ -22,7 +22,7 @@ const Skills = () => {
   return (
     <>
           <div id="skills-page" className="row h-100">
-              <div className="col-11 col-sm-6 col-md-7 col-lg-6 col-xl-6 d-flex flex-column justify-content-end ps-sm-5 align-items-center text-center text-sm-start align-items-sm-start justify-content-sm-center">
+              <div className="col-11 col-sm-6 col-md-7 col-lg-6 col-xl-6 d-flex flex-column justify-content-center ps-sm-5 align-items-center text-center text-sm-start align-items-sm-start justify-content-sm-center">
                 <h1 className='display-3'>
                   <AnimatedWord letterClass={letterClass} strArray={['MY']} />
                   &nbsp;
@@ -33,7 +33,7 @@ const Skills = () => {
                 </h1>
                 <p className='fs-4'>These are the technologies I've worked with</p>
               </div>
-            <div className="col-11 col-sm-6 col-md-5 col-lg-6 col-xl-5 d-flex justify-content-center align-items-center align-items-sm-center justify-content-md-start justify-content-sm-center justify-content-lg-center  ">
+            <div className="col-11 col-sm-6 col-md-5 col-lg-6 col-xl-5 d-flex justify-content-center  align-items-sm-center justify-content-md-start justify-content-sm-center justify-content-lg-center  ">
               <div className="row row-cols-3">
                 <div className="col">
                 <div className="card d-flex flex-column align-items-center ">
