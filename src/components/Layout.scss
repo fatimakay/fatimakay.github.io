@@ -12,6 +12,8 @@
         font-family: 'Oswald'; 
         color:#6fffe9;
         animation: fadeInUp 1s 1s backwards; 
+        cursor:context-menu;
+
     }
     p.fs-4{
         color: white; 
@@ -28,7 +30,8 @@
 @media only screen and (width >= 1200px){
     #about-page, 
     #projects-page,
-    #skills-page{
+    #skills-page, 
+    #contact-page{
         h1{
             font-size: calc(1.525rem + 3.3vw);
         }

@@ -1,8 +1,21 @@
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
 #homepage{
     h1{
         color: white; 
         font-family: 'Oswald'; 
         animation: fadeInUp 1s 1s backwards;
+        cursor:context-menu;
+      
     }
     h2{
         color: #cccccc;
