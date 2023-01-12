@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.css": "/static/css/main.37389d36.css",
-    "main.js": "/static/js/main.0488bd9d.js",
+    "main.css": "/static/css/main.85cc8c7b.css",
+    "main.js": "/static/js/main.6d781653.js",
     "static/js/787.90147cfc.chunk.js": "/static/js/787.90147cfc.chunk.js",
     "static/media/sky1.jpg": "/static/media/sky1.a6cc71a59289ddfe4059.jpg",
     "static/media/Raleway-Regular.ttf": "/static/media/Raleway-Regular.c268e80ba67c4a294054.ttf",
     "static/media/Oswald-VariableFont_wght.ttf": "/static/media/Oswald-VariableFont_wght.46d7853f0185f6bf0c93.ttf",
+    "static/media/FSK.pdf": "/static/media/FSK.2a8282bd73d6fb584e45.pdf",
     "static/media/github.png": "/static/media/github.cf072ed8cb1c0cd6d304.png",
     "static/media/react.png": "/static/media/react.8fb3c770f5d958c57444.png",
     "static/media/sass.png": "/static/media/sass.a54e794cbe5e53f8ff7a.png",
@@ -21,12 +22,12 @@
     "static/media/logo.png": "/static/media/logo.8a926147d5020e57ce73.png",
     "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/index.html",
-    "main.37389d36.css.map": "/static/css/main.37389d36.css.map",
-    "main.0488bd9d.js.map": "/static/js/main.0488bd9d.js.map",
+    "main.85cc8c7b.css.map": "/static/css/main.85cc8c7b.css.map",
+    "main.6d781653.js.map": "/static/js/main.6d781653.js.map",
     "787.90147cfc.chunk.js.map": "/static/js/787.90147cfc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.37389d36.css",
-    "static/js/main.0488bd9d.js"
+    "static/css/main.85cc8c7b.css",
+    "static/js/main.6d781653.js"
   ]
 }
