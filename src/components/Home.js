@@ -4,6 +4,7 @@ import './Layout.scss';
 import './Home.scss';
 import AnimatedWord from './AnimatedWord';
 import { useEffect, useState } from 'react';
+import Resume from "../assets/FSK.pdf";
 import Loader from 'react-loaders';
 
 const Home = () => {
@@ -30,7 +31,10 @@ const Home = () => {
                 <AnimatedWord letterClass={letterClass} strArray={lastName} />
                 </h1>
                 <h2 className='mt-sm-2 mt-lg-3 display-6'>Front-end Developer</h2>
-                <Link to="/contact" className='flat-button mt-2 mt-sm-3 mt-lg-4 fs-2'>CONTACT ME</Link>
+                <div className="d-flex">
+                <Link to="/contact" className='flat-button mt-2 mt-sm-3 mt-lg-4 fs-4'>CONTACT ME</Link>
+                <a href={Resume} className='view-resume mt-2 mt-sm-3 mt-lg-4 fs-4' target="_blank">VIEW RESUME</a>
+                </div>
      </div> 
 
      {/*=== DECOR IMAGE === */}

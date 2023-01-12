@@ -91,7 +91,7 @@ const Projects = () => {
               <div className="col d-flex align-items-stretch">
                 <div className="card">
                   <img
-                    src="https://ucarecdn.com/6aa6e755-bf46-4142-92ed-7e7712a77d01/-/preview/-/quality/smart/-/format/auto/"
+                    src="https://ucarecdn.com/70141a98-3661-4019-aecd-ab3e7ef5e7b2/-/preview/-/quality/smart/-/format/auto/"
                     className="card-img-top"
                     alt="..."
                   />

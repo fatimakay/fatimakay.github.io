@@ -1,18 +1,7 @@
-/* The typing effect */
-@keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-  }
-  
-  /* The typewriter cursor effect */
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: orange; }
-  }
 #homepage{
     h1{
         color: white; 
-        font-family: 'Oswald'; 
+        font-family: "Oswald", 'Tahoma'; 
         animation: fadeInUp 1s 1s backwards;
         cursor:context-menu;
       
@@ -41,6 +30,18 @@
             color: #000000; 
         }
 
+    }
+    .view-resume{
+        color: #ffffff; 
+        letter-spacing: 4px;
+        font-family: 'Oswald';
+        text-decoration: none;
+        width: fit-content;
+        padding: 10px 18px;
+        animation: fadeInUp 1s 2.5s backwards; 
+        &:hover{
+            text-decoration: underline;
+        }
     }
     .rocketship{
         display:none;
@@ -101,9 +102,8 @@
         h2{
             font-size: calc(1.375rem + 1.5vw);
         }
-        .flat-button{
-            font-size: calc(1.325rem + .9vw)!important;
-        }
+        .flat-button, .view-resume{
+            font-size: calc(1.275rem + .3vw)!important;        }
     }
 
 }
