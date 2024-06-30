@@ -31,13 +31,13 @@ const Sidebar = () => {
             <Home  size="30"/>
             <span>Home</span>
            </NavLink>
-           <NavLink exact="true"  id="about-link"  title='About Me' className={`${classNameFunc} d-flex gap-5`}  to="/about">
-            <User size="30"/>
-            <span>About Me</span>
-           </NavLink>
            <NavLink exact="true" id="project-link"  title='Projects' className={`${classNameFunc} d-flex gap-5`}  to="/projects">
            <Briefcase size="30"/>
            <span>Projects</span>
+           </NavLink>
+           <NavLink exact="true"  id="about-link"  title='About Me' className={`${classNameFunc} d-flex gap-5`}  to="/about">
+            <User size="30"/>
+            <span>About Me</span>
            </NavLink>
            <NavLink exact="true" id="skills-link"  title='Skills' className={`${classNameFunc} d-flex gap-5`}  to="/skills">
            <Tool size="30"/>

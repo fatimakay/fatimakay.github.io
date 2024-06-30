@@ -11,14 +11,14 @@
     h1{
         font-family: 'Oswald'; 
         color:#6fffe9;
-        animation: fadeInUp 1s 1s backwards; 
+        animation: fadeInUp 0.5s 0.5s backwards; 
         cursor:context-menu;
 
     }
     p.fs-4{
         color: white; 
         font-family: 'Raleway';
-        animation: fadeInUp 1s 1.8s backwards; 
+        animation: fadeInUp 0.5s 0.9s backwards; 
     }
     .text-animate-hover{
         &:hover{

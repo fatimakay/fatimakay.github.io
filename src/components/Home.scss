@@ -2,14 +2,14 @@
     h1{
         color: white; 
         font-family: "Oswald", 'Tahoma'; 
-        animation: fadeInUp 1s 1s backwards;
+        animation: fadeInUp 0.5s 0.5s backwards;
         cursor:context-menu;
       
     }
     h2{
         color: #cccccc;
         font-family: 'Raleway'; 
-        animation: fadeIn 1s 2.0s backwards;
+        animation: fadeIn 0.5s 1.0s backwards;
     }
     .flat-button{
         color: #6fffe9; 
@@ -19,7 +19,7 @@
         width: fit-content;
         padding: 10px 18px;
         border: 1px solid #6fffe9; 
-        animation: fadeInUp 1s 2.5s backwards; 
+        animation: fadeInUp 1s 1.8s backwards; 
 
         &:hover{
             background: #6fffe9;
@@ -38,7 +38,7 @@
         text-decoration: none;
         width: fit-content;
         padding: 10px 18px;
-        animation: fadeInUp 1s 2.5s backwards; 
+        animation: fadeInUp 1s 1.8s backwards; 
         &:hover{
             text-decoration: underline;
         }
@@ -47,7 +47,7 @@
         display:none;
     }
     .planet{
-        animation: fadeInUp 1s 1s backwards;
+        animation: fadeInUp 0.5s 0.5s backwards;
         &:hover + .rocketship{
            
             display: inline;

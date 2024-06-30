@@ -33,6 +33,29 @@ const Projects = () => {
             <div className="col d-flex align-items-stretch">
                 <div className="card">
                   <img
+                  src="https://ucarecdn.com/84669443-aae1-4464-8bb5-66c6aea8e194/disneyneu.jpg"
+                    className="card-img-top"
+                    alt="..."
+                  />
+                  <div className="card-body">
+                    <h3 className="card-title">Exploring Disney Data
+                    </h3>
+                    <p className="card-text fs-5">
+                    Step-by-Step Data Preprocessing and Descriptive Analysis 
+                    </p>
+                  </div>
+                  <div className="card-footer">
+                    <a href="https://github.com/fatimakay/python-disney-project" target="_blank">
+                      <button className="githubbtn btn fs-5">
+                        View on Github
+                      </button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            <div className="col d-flex align-items-stretch">
+                <div className="card">
+                  <img
                   src="https://ucarecdn.com/10be364e-bca7-4d0d-8142-195ba7c76717/-/preview/-/quality/smart/-/format/auto/"
                     className="card-img-top"
                     alt="..."
@@ -52,35 +75,6 @@ const Projects = () => {
                     </a>
                     <a
                       href="https://nebulachatapp.web.app"
-                      target="_blank"
-                    >
-                      <button className="livebtn btn fs-5">Live Demo</button>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div className="col d-flex align-items-stretch">
-                <div className="card">
-                  <img
-                    src="https://ucarecdn.com/8785ef4c-4013-4982-8ad1-c4b7122a42e0/-/preview/-/quality/smart/-/format/auto/"
-                    className="card-img-top"
-                    alt="..."
-                  />
-                  <div className="card-body">
-                    <h3 className="card-title">Blog Website</h3>
-                    <p className="card-text fs-5">
-                      Developed a responsive, react-based front-end of a
-                      blogging site for a client.
-                    </p>
-                  </div>
-                  <div className="card-footer">
-                    <a href="https://github.com/alpha2207/blog" target="_blank">
-                      <button className="githubbtn btn fs-5">
-                        View on Github
-                      </button>
-                    </a>
-                    <a
-                      href="https://alpha-blog-frontend.vercel.app/"
                       target="_blank"
                     >
                       <button className="livebtn btn fs-5">Live Demo</button>
@@ -144,29 +138,6 @@ const Projects = () => {
                       </button>
                     </a>
                     <a href="https://memoed-73535.web.app/" target="_blank">
-                      <button className="livebtn btn fs-5">Live Demo</button>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div className="col d-flex align-items-stretch">
-                <div className="card">
-                  <img
-                    src="https://ucarecdn.com/15658a0e-b80e-480c-a7d8-2f36be332567/-/preview/-/quality/smart/-/format/auto/"
-                    className="card-img-top"
-                    alt="..."
-                  />
-                  <div className="card-body">
-                    <h3 className="card-title">
-                      luxescope - Fictional Watch Store
-                    </h3>
-                    <p className="card-text fs-5">
-                      A fake ecommerce website built with Elementor. It
-                      integrates various plugins like Woocommerce and Shopengine
-                    </p>
-                  </div>
-                  <div className="card-footer">
-                    <a href="http://luxescope.byethost22.com" target="_blank">
                       <button className="livebtn btn fs-5">Live Demo</button>
                     </a>
                   </div>

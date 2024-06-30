@@ -1,7 +1,7 @@
 #contact-page {
     .spaceimg {
         width: 100%;
-        animation: slideInDown 1.5s 2.5s backwards;
+        animation: slideInDown 1s 1s backwards;
     }
 
     .contact-form {
@@ -14,7 +14,7 @@
                 margin: 0;
                 list-style: none;
                 opacity: 0;
-                animation: fadeInUp 1s 1.8s forwards;
+                animation: fadeInUp 0.5s 0.5s forwards;
                 clear: both;
             }
 

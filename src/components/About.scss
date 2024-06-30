@@ -1,12 +1,12 @@
 #about-page{
     img{
-        max-width: 80%;
+        max-width: 75%;
     }
 }
 @media only screen and (width >= 576px) {
     #about-page{
         img{
-            animation: fadeInRight 1.5s 2.6s backwards;
+            animation: fadeInRight 0.75s 1.3s backwards;
         }
     }
 }

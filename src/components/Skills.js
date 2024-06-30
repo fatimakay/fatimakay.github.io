@@ -11,7 +11,13 @@ import Tailwind from '../assets/images/tailwind.png'
 import Github from '../assets/images/github.png'
 import Bootstrap from '../assets/images/bootstrap.png'
 import Firebase from '../assets/images/firebase.png'
-
+import Python from '../assets/images/python.png'
+import SQL from '../assets/images/sql.png'
+import Tab from '../assets/images/tableau.png'
+import Seaborn from '../assets/images/seaborn.png'
+import Matplot from '../assets/images/matplot.png'
+import DB from '../assets/images/databricks.png'
+import Git from '../assets/images/git.png'
 
 const Skills = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -38,20 +44,49 @@ const Skills = () => {
 
               {/*=== SKILLS LIST === */}
             <div className="col-11 col-sm-6 col-md-5 col-lg-6 col-xl-5 d-flex justify-content-center  align-items-sm-center justify-content-md-start justify-content-sm-center justify-content-lg-center  ">
-              <div className="row row-cols-3">
+              <div className="row row-cols-4">
+              <div className="col">
+                <div className="card d-flex flex-column align-items-center ">
+                  <img src={Python} className="card-img-top" alt="..." />
+                  <div className="card-body">
+                    <h5 className="card-title text-white text-center fs-5">Python</h5>
+                  </div>
+                </div>
+                </div>
                 <div className="col">
                 <div className="card d-flex flex-column align-items-center ">
-                  <img src={HTML} className="card-img-top" alt="..." />
+                  <img src={SQL} className="card-img-top" alt="..." />
                   <div className="card-body">
-                    <h5 className="card-title text-white text-center fs-5">HTML</h5>
+                    <h5 className="card-title text-white text-center fs-5">SQL</h5>
+                  </div>
+                </div>
+                </div>
+               
+                <div className="card d-flex flex-column align-items-center ">
+                  <img src={Seaborn} className="card-img-top" alt="..." />
+                  <div className="card-body">
+                    <h5 className="card-title text-white text-center fs-5">Seaborn</h5>
+                  </div>
+                </div>
+                <div className="card d-flex flex-column align-items-center ">
+                  <img src={Matplot} className="card-img-top" alt="..." />
+                  <div className="card-body">
+                    <h5 className="card-title text-white text-center fs-5">matplotlib</h5>
+                  </div>
+                </div>
+                <div className="col">
+                <div className="card d-flex flex-column align-items-center ">
+                  <img src={Tab} className="card-img-top" alt="..." />
+                  <div className="card-body">
+                    <h5 className="card-title text-white text-center fs-5">Tableau</h5>
                   </div>
                 </div>
                 </div>
                 <div className="col">
                 <div className="card d-flex flex-column align-items-center">
-                  <img src={CSS} className="card-img-top" alt="..." />
+                  <img src={DB} className="card-img-top" alt="..." />
                   <div className="card-body">
-                    <h5 className="card-title text-white text-center fs-5">CSS</h5>
+                    <h5 className="card-title text-white text-center fs-5">Databricks</h5>
                   </div>
                 </div>
                 </div>
@@ -73,9 +108,33 @@ const Skills = () => {
                 </div>
                 <div className="col">
                 <div className="card d-flex flex-column align-items-center">
+                  <img src={HTML} className="card-img-top" alt="..." />
+                  <div className="card-body">
+                    <h5 className="card-title text-white text-center fs-5">HTML5</h5>
+                  </div>
+                </div>
+                </div>
+                <div className="col">
+                <div className="card d-flex flex-column align-items-center">
+                  <img src={CSS} className="card-img-top" alt="..." />
+                  <div className="card-body">
+                    <h5 className="card-title text-white text-center fs-5">CSS3</h5>
+                  </div>
+                </div>
+                </div>
+                <div className="col">
+                <div className="card d-flex flex-column align-items-center">
                   <img src={Github} className="card-img-top" alt="..." />
                   <div className="card-body">
                     <h5 className="card-title text-white text-center fs-5">Github</h5>
+                  </div>
+                </div>
+                </div>
+                <div className="col">
+                <div className="card d-flex flex-column align-items-center">
+                  <img src={Git} className="card-img-top" alt="..." />
+                  <div className="card-body">
+                    <h5 className="card-title text-white text-center fs-5">Git</h5>
                   </div>
                 </div>
                 </div>

@@ -30,7 +30,7 @@ const Home = () => {
                 <AnimatedWord letterClass={letterClass} strArray={firstName}/>&nbsp;
                 <AnimatedWord letterClass={letterClass} strArray={lastName} />
                 </h1>
-                <h2 className='mt-sm-2 mt-lg-3 display-6'>Front-end Developer</h2>
+                <h2 className='mt-sm-2 mt-lg-3 display-6'>Data and Software Engineer</h2>
                 <div className="d-flex">
                 <Link to="/contact" className='flat-button mt-2 mt-sm-3 mt-lg-4 fs-4'>CONTACT ME</Link>
                 <a href={Resume} className='view-resume mt-2 mt-sm-3 mt-lg-4 fs-4' target="_blank">VIEW RESUME</a>

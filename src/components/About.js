@@ -21,18 +21,16 @@ const About = () => {
             <AnimatedWord letterClass={letterClass} strArray={['ME']} />
           </h1>
           <p className='fs-4'>
-            Welcome to my mini portfolio website! My name is Fatima Khan and I'm an aspiring
-            front-end developer. I graduated with a Computer Science degree from Bahria University, 
-            where I fell in love with web development and have been pursuing it since. I've taught 
-            myself numerous tools and technologies by building personal projects and freelancing, 
-            which you can view on my 'Projects' page. 
+            Welcome to my mini portfolio website! My name is Fatima and I'm an aspiring
+            data analyst with a software developer background. I graduated with a Computer Science degree 
+            from Bahria University. Through my academic background and extensive self-learning, 
+            I have equipped myself with numerous tools and technologies. You can view some of my work
+            on my 'Projects' page. 
           </p>
           <p className='fs-4'>
-            I'm constantly striving to increase my knowledge in the world of web
-            development. During my internship at Insource Pakistan, I learned
-            how to work with a completely unfamiliar language, PHP, while
-            effectively meeting my supervisor's milestones. I am now looking for a junior dev 
-            position to finally kickstart my career and learn among professionals.
+          I'm now seeking a junior data analyst position to kickstart my career, 
+          learn from seasoned professionals, and contribute to real-world projects. 
+          Thank you for visiting my portfolio, and I look forward to connecting with you!
           </p>
           <h2></h2>
         </div>
@@ -40,7 +38,7 @@ const About = () => {
         {/*=== SELF PORTRAIT === */}
         <div id="imgwrapper" className="col-11 col-sm-6 col-md-5 col-lg-6 col-xl-5 order-1 order-sm-2 d-flex justify-content-center align-items-end align-items-sm-center justify-content-md-start justify-content-sm-center justify-content-lg-center  ">
         <img className='d-flex'
-        src='https://ucarecdn.com/c33bbd0e-8cfd-463d-8be8-0f3b7d04eb08/-/preview/-/quality/smart/-/format/auto/'/>
+        src='https://ucarecdn.com/2ab4127a-5cba-4769-9a9c-3ea6577a9397/file.png'/>
         </div>
       </div>
     </>
