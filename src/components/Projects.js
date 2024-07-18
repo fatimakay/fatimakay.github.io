@@ -98,8 +98,9 @@ const Projects = () => {
                   </div>
                   <div className="card-footer">
                     <a
-                      href="https://github.com/fatimakay/react-weather-app"
+                      href="https://fatimakay.github.io/react-weather-app"
                       target="_blank"
+                      rel="noopener noreferrer"
                     >
                       <button className="githubbtn btn fs-5">
                         View on Github

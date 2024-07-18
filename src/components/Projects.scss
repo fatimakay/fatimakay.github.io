@@ -41,11 +41,19 @@
     .githubbtn{
       border: 1px solid #6fffe9;
       border-radius: 0;
+      &:hover {
+        background-color: #6fffe9; /* Change background color on hover */
+        color: black; /* Optional: Change text color */
+      }
     }
     .livebtn{
       border-radius: 0;
       background-color: #6fffe9;
       color: black;
+      &:hover {
+        background-color: white; /* Change background color on hover */
+        color: black; /* Optional: Change text color */
+      }
     }
  }
 @media only screen and (width < 576px){
