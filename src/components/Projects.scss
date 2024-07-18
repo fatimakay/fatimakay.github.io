@@ -16,6 +16,9 @@
     img{
       aspect-ratio: 19/9;
     }
+    h2{
+      animation: fadeInUp 0.5s 1.5s backwards;
+    }
     .card{
         color: white;
         background: #000000;
