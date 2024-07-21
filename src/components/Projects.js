@@ -139,16 +139,16 @@ const Projects = () => {
                 </div>
                 <div className="card-footer">
                   <a
-                    href="https://fatimakay.github.io/react-weather-app"
+                    href="fatimakay.github.io/react-weather-app"
                     target="_blank"
-                    rel="noopener noreferrer"
+                    
                   >
                     <button className="githubbtn btn fs-5">
                       View on Github
                     </button>
                   </a>
                   <a
-                    href="fatimakay.github.io/react-weather-app/"
+                    href="https://fatimakay.github.io/react-weather-app/"
                     target="_blank"
                   >
                     <button className="livebtn btn fs-5">Live Demo</button>
@@ -166,8 +166,8 @@ const Projects = () => {
                 <div className="card-body">
                   <h3 className="card-title">Memoed - Notes Taking App</h3>
                   <p className="card-text fs-5">
-                    A basic notes taking application built using ReactJS.
-                    Firebase was used for backend and for hosting
+                    Simple note-taking application with login functionality. Built withs ReactJS and
+                    hosted on Firebase.
                   </p>
                 </div>
                 <div className="card-footer">
