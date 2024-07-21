@@ -34,6 +34,31 @@ const Projects = () => {
           className="col-11 h-50 d-flex flex-column"
         >
           <div className="row row-cols-1 row-cols-md-3 g-4">
+
+            <div className="col d-flex align-items-stretch">
+              <div className="card">
+                <img
+                  src="https://img.freepik.com/premium-photo/muesli-with-berries-milk-tablehealthy-granola-yogurt-with-berries-breakfast-clos_912214-9589.jpg?w=996"
+                  className="card-img-top"
+                  alt="..."
+                />
+                <div className="card-body">
+                  <h3 className="card-title">Delivery Process Analysis
+                  </h3>
+                  <p className="card-text fs-5">
+                  A data exploration and predictive analysis project on Muesli distribution order data.
+                  </p>
+                </div>
+                <div className="card-footer">
+                  <a href="https://github.com/fatimakay/delivery-process-analysis" target="_blank">
+                    <button className="githubbtn btn fs-5">
+                      View on Github
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+
             <div className="col d-flex align-items-stretch">
               <div className="card">
                 <img
@@ -59,6 +84,7 @@ const Projects = () => {
             </div>
 
           </div>
+
         </div>
 
         <h2 className="display-4">Web Development</h2>
