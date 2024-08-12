@@ -62,6 +62,30 @@ const Projects = () => {
             <div className="col d-flex align-items-stretch">
               <div className="card">
                 <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScV7_FeuQpPaFmAIH-VR7ICpktohwB7ts4vA&s"
+                  className="card-img-top"
+                  alt="..."
+                />
+                <div className="card-body">
+                  <h3 className="card-title">Weather vs. Flights DBT Project
+                  </h3>
+                  <p className="card-text fs-5">
+                  Analyzing the Impact of the January 2016 Snowstorm on Flight Schedules using SQL, dbt, and pandas for data transformation.
+                  </p>
+                </div>
+                <div className="card-footer">
+                  <a href="https://github.com/fatimakay/snowzilla_dbt_project" target="_blank">
+                    <button className="githubbtn btn fs-5">
+                      View on Github
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div className="col d-flex align-items-stretch">
+              <div className="card">
+                <img
                   src="https://ucarecdn.com/84669443-aae1-4464-8bb5-66c6aea8e194/disneyneu.jpg"
                   className="card-img-top"
                   alt="..."
