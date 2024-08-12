@@ -35,6 +35,30 @@ const Projects = () => {
         >
           <div className="row row-cols-1 row-cols-md-3 g-4">
 
+          <div className="col d-flex align-items-stretch">
+              <div className="card">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScV7_FeuQpPaFmAIH-VR7ICpktohwB7ts4vA&s"
+                  className="card-img-top"
+                  alt="..."
+                />
+                <div className="card-body">
+                  <h3 className="card-title">Weather vs. Flights DBT Project
+                  </h3>
+                  <p className="card-text fs-5">
+                  Analyzing the Impact of the January 2016 Snowstorm on Flight Schedules using SQL, dbt, and pandas for data transformation.
+                  </p>
+                </div>
+                <div className="card-footer">
+                  <a href="https://github.com/fatimakay/snowzilla_dbt_project" target="_blank">
+                    <button className="githubbtn btn fs-5">
+                      View on Github
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+
             <div className="col d-flex align-items-stretch">
               <div className="card">
                 <img
@@ -51,30 +75,6 @@ const Projects = () => {
                 </div>
                 <div className="card-footer">
                   <a href="https://github.com/fatimakay/delivery-process-analysis" target="_blank">
-                    <button className="githubbtn btn fs-5">
-                      View on Github
-                    </button>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <div className="col d-flex align-items-stretch">
-              <div className="card">
-                <img
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScV7_FeuQpPaFmAIH-VR7ICpktohwB7ts4vA&s"
-                  className="card-img-top"
-                  alt="..."
-                />
-                <div className="card-body">
-                  <h3 className="card-title">Weather vs. Flights DBT Project
-                  </h3>
-                  <p className="card-text fs-5">
-                  Analyzing the Impact of the January 2016 Snowstorm on Flight Schedules using SQL, dbt, and pandas for data transformation.
-                  </p>
-                </div>
-                <div className="card-footer">
-                  <a href="https://github.com/fatimakay/snowzilla_dbt_project" target="_blank">
                     <button className="githubbtn btn fs-5">
                       View on Github
                     </button>
