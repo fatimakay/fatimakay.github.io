@@ -1,20 +1,18 @@
 /* eslint-disable react/jsx-no-target-blank */
-import { useEffect, useState } from "react";
-import AnimatedWord from "./AnimatedWord";
-import './Projects.scss';
+import { useEffect, useState } from 'react'
+import AnimatedWord from './AnimatedWord'
+import './Projects.scss'
 
 const Projects = () => {
-
-  const [letterClass, setLetterClass] = useState('text-animate');
+  const [letterClass, setLetterClass] = useState('text-animate')
 
   useEffect(() => {
-    setLetterClass('text-animate-hover');
+    setLetterClass('text-animate-hover')
   }, [])
 
   return (
     <>
       <div id="projects-page" className="row">
-
         {/*=== PAGE TITLE AND DESCRIPTION === */}
         <div className="col-11 mt-5 d-flex flex-column justify-content-end ps-sm-5 align-items-center text-center text-sm-start align-items-sm-center">
           <h1 className="display-3">
@@ -25,17 +23,37 @@ const Projects = () => {
           <p className="fs-4">A collection of some of my projects.</p>
         </div>
 
-
-
         {/*=== PROJECTS CARDS === */}
         <h2 className="display-4">Data Analytics</h2>
-        <div
-          id="dataprojectslist"
-          className="col-11 h-50 d-flex flex-column"
-        >
+        <div id="dataprojectslist" className="col-11 d-flex flex-column">
           <div className="row row-cols-1 row-cols-md-3 g-4">
+            <div className="col d-flex align-items-stretch">
+              <div className="card">
+                <img
+                  src="https://ucarecdn.com/8bc9e27d-6706-45e4-b33d-efc9c5eb4306/dash1.png"
+                  className="card-img-top"
+                  alt="..."
+                />
+                <div className="card-body">
+                  <h3 className="card-title">Policing the Police</h3>
+                  <p className="card-text fs-5">
+                    Investigating potential racial biases in traffic stop data.
+                  </p>
+                </div>
+                <div className="card-footer">
+                  <a
+                    href="https://github.com/fatimakay/snowzilla_dbt_project"
+                    target="_blank"
+                  >
+                    <button className="githubbtn btn fs-5">
+                      View on Github
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
 
-          <div className="col d-flex align-items-stretch">
+            <div className="col d-flex align-items-stretch">
               <div className="card">
                 <img
                   src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScV7_FeuQpPaFmAIH-VR7ICpktohwB7ts4vA&s"
@@ -43,14 +61,20 @@ const Projects = () => {
                   alt="..."
                 />
                 <div className="card-body">
-                  <h3 className="card-title">Weather vs. Flights DBT Project
+                  <h3 className="card-title">
+                    Weather vs. Flights DBT Project
                   </h3>
                   <p className="card-text fs-5">
-                  Analyzing the Impact of the January 2016 Snowstorm on Flight Schedules using SQL, dbt, and pandas for data transformation.
+                    Analyzing the Impact of the January 2016 Snowstorm on Flight
+                    Schedules using SQL, dbt, and pandas for data
+                    transformation.
                   </p>
                 </div>
                 <div className="card-footer">
-                  <a href="https://github.com/fatimakay/snowzilla_dbt_project" target="_blank">
+                  <a
+                    href="https://github.com/fatimakay/snowzilla_dbt_project"
+                    target="_blank"
+                  >
                     <button className="githubbtn btn fs-5">
                       View on Github
                     </button>
@@ -67,14 +91,17 @@ const Projects = () => {
                   alt="..."
                 />
                 <div className="card-body">
-                  <h3 className="card-title">Delivery Process Analysis
-                  </h3>
+                  <h3 className="card-title">Delivery Process Analysis</h3>
                   <p className="card-text fs-5">
-                  A data exploration and predictive analysis project on Muesli distribution order data.
+                    A data exploration and predictive analysis project on Muesli
+                    distribution order data.
                   </p>
                 </div>
                 <div className="card-footer">
-                  <a href="https://github.com/fatimakay/delivery-process-analysis" target="_blank">
+                  <a
+                    href="https://github.com/fatimakay/delivery-process-analysis"
+                    target="_blank"
+                  >
                     <button className="githubbtn btn fs-5">
                       View on Github
                     </button>
@@ -91,14 +118,16 @@ const Projects = () => {
                   alt="..."
                 />
                 <div className="card-body">
-                  <h3 className="card-title">Exploring Disney Data
-                  </h3>
+                  <h3 className="card-title">Exploring Disney Data</h3>
                   <p className="card-text fs-5">
                     Step-by-Step Data Preprocessing and Descriptive Analysis
                   </p>
                 </div>
                 <div className="card-footer">
-                  <a href="https://github.com/fatimakay/python-disney-project" target="_blank">
+                  <a
+                    href="https://github.com/fatimakay/python-disney-project"
+                    target="_blank"
+                  >
                     <button className="githubbtn btn fs-5">
                       View on Github
                     </button>
@@ -106,17 +135,11 @@ const Projects = () => {
                 </div>
               </div>
             </div>
-
           </div>
-
         </div>
 
         <h2 className="display-4">Web Development</h2>
-        <div
-          id="webprojectslist"
-          className="col-11 h-50 d-flex flex-column"
-        >
-
+        <div id="webprojectslist" className="col-11 d-flex flex-column">
           <div className="row row-cols-1 row-cols-md-3 g-4">
             <div className="col d-flex align-items-stretch">
               <div className="card">
@@ -128,20 +151,20 @@ const Projects = () => {
                 <div className="card-body">
                   <h3 className="card-title">Nebula - Realtime Chat App</h3>
                   <p className="card-text fs-5">
-                    A chat application which uses Firebase database to fetch conversations
-                    in realtime.
+                    A chat application which uses Firebase database to fetch
+                    conversations in realtime.
                   </p>
                 </div>
                 <div className="card-footer">
-                  <a href="https://github.com/fatimakay/nebula-chat-app" target="_blank">
+                  <a
+                    href="https://github.com/fatimakay/nebula-chat-app"
+                    target="_blank"
+                  >
                     <button className="githubbtn btn fs-5">
                       View on Github
                     </button>
                   </a>
-                  <a
-                    href="https://nebulachatapp.web.app"
-                    target="_blank"
-                  >
+                  <a href="https://nebulachatapp.web.app" target="_blank">
                     <button className="livebtn btn fs-5">Live Demo</button>
                   </a>
                 </div>
@@ -165,7 +188,6 @@ const Projects = () => {
                   <a
                     href="fatimakay.github.io/react-weather-app"
                     target="_blank"
-                    
                   >
                     <button className="githubbtn btn fs-5">
                       View on Github
@@ -190,8 +212,8 @@ const Projects = () => {
                 <div className="card-body">
                   <h3 className="card-title">Memoed - Notes Taking App</h3>
                   <p className="card-text fs-5">
-                    Simple note-taking application with login functionality. Built withs ReactJS and
-                    hosted on Firebase.
+                    Simple note-taking application with login functionality.
+                    Built withs ReactJS and hosted on Firebase.
                   </p>
                 </div>
                 <div className="card-footer">
@@ -272,8 +294,6 @@ const Projects = () => {
       </div>
     </>
   )
-
-
 }
 
-export default Projects;
+export default Projects

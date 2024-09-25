@@ -38,7 +38,7 @@ const About = () => {
         {/*=== SELF PORTRAIT === */}
         <div id="imgwrapper" className="col-11 col-sm-6 col-md-5 col-lg-6 col-xl-5 order-1 order-sm-2 d-flex justify-content-center align-items-end align-items-sm-center justify-content-md-start justify-content-sm-center justify-content-lg-center  ">
         <img className='d-flex'
-        src='https://ucarecdn.com/2ab4127a-5cba-4769-9a9c-3ea6577a9397/file.png'/>
+        src='https://ucarecdn.com/3eafbc0f-5b82-419a-a341-57ab6e041ef7/profile.png'/>
         </div>
       </div>
     </>
