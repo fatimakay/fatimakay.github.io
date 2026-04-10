@@ -1,10 +1,9 @@
 html{
   font-size: 62.5%;
-  height: 100%;
+  scroll-behavior: smooth;
 }
 
 body {
-  height: 100%;
   margin: 0;
   font: 300 11px/1.4 'Helvetica Neue', 'sans-serif';
   color: #6fffe9; 
@@ -12,8 +11,7 @@ body {
   background-image: url('./assets/images/sky1.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  display: block;
-  overflow: hidden;
+  background-attachment: fixed;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

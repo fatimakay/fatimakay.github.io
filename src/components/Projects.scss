@@ -1,31 +1,26 @@
 ::-webkit-scrollbar {
   width: 4px;
 }
-/* Track */
 ::-webkit-scrollbar-track {
   background: none;
 }
-/* Handle */
 ::-webkit-scrollbar-thumb {
   background: #cccccc;
 }
-#projects-page {
-  height: 100vh;
-  overflow-y: scroll;
+
+#projects {
+  padding-bottom: 4rem;
   img {
     aspect-ratio: 19/9;
   }
   h2 {
-    animation: fadeInUp 0.5s 1.5s backwards;
+    color: white;
+    font-family: 'Oswald';
   }
   .card {
     color: white;
     background: #000000;
     box-shadow: 0px 0px 4px 1px #131313;
-    animation: fadeInUp 0.5s 1.5s backwards;
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
     transition: all 0.3s ease;
     &:hover {
       transform: scale(1.06);
@@ -45,8 +40,8 @@
     border: 1px solid #6fffe9;
     border-radius: 0;
     &:hover {
-      background-color: #6fffe9; /* Change background color on hover */
-      color: black; /* Optional: Change text color */
+      background-color: #6fffe9;
+      color: black;
     }
   }
   .livebtn {
@@ -54,21 +49,8 @@
     background-color: #6fffe9;
     color: black;
     &:hover {
-      background-color: white; /* Change background color on hover */
-      color: black; /* Optional: Change text color */
+      background-color: white;
+      color: black;
     }
-  }
-}
-@media only screen and (width < 576px) {
-  ::-webkit-scrollbar {
-    width: 0px;
-  }
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: none;
-  }
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: white;
   }
 }

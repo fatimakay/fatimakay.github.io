@@ -1,4 +1,4 @@
-#skills-page{
+#skills{
     .card{
         background: #000000;
         animation: flipInY 1s 1.25s backwards;
@@ -18,7 +18,7 @@
     }
 }
 @media only screen and (width <576px){
-    #skills-page{
+    #skills{
         .card{
             img{
                 max-width: 50px;
