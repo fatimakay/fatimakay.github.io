@@ -1,14 +1,14 @@
 import './Sidebar.scss'
-import { Briefcase, GitHub, Home, Linkedin, Mail, Menu, MessageSquare, Tool, User } from 'react-feather';
+import { Briefcase, GitHub, Home, Linkedin, Mail, Menu, Send, TrendingUp, User } from 'react-feather';
 import Logo from '../assets/images/logo.png'
 import { useState, useEffect } from 'react';
 
 const navLinks = [
-  { id: 'homepage', label: 'Home',     Icon: Home },
-  { id: 'about',    label: 'About Me', Icon: User },
-  { id: 'skills',   label: 'Skills',   Icon: Tool },
-  { id: 'projects', label: 'My Work',  Icon: Briefcase },
-  { id: 'contact',  label: 'Contact',  Icon: MessageSquare },
+  { id: 'homepage',   label: 'Home',       Icon: Home },
+  { id: 'about',      label: 'About Me',   Icon: User },
+  { id: 'experience', label: 'Experience', Icon: TrendingUp },
+  { id: 'projects',   label: 'My Work',    Icon: Briefcase },
+  { id: 'contact',    label: 'Contact',    Icon: Send },
 ];
 
 const Sidebar = () => {
