@@ -19,8 +19,7 @@ const About = () => {
         </p>
         <p className="fs-4">
           When I'm not coding, I'm usually paddleboarding on the Havel or
-          spending time at my favorite arcade. I love to unwind with some
-          Assassin's Creed or board games with friends.
+          spending time at my favorite arcade.
         </p>
       </div>
 

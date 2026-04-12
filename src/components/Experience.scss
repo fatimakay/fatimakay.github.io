@@ -1,0 +1,181 @@
+#experience {
+  // ── Timeline ──────────────────────────────────────
+  .timeline {
+    position: relative;
+    padding-left: 2rem;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background: #6fffe9;
+      opacity: 0.3;
+    }
+  }
+
+  .timeline-item {
+    position: relative;
+    margin-bottom: 3rem;
+    &:last-child { margin-bottom: 0; }
+  }
+
+  .timeline-dot {
+    position: absolute;
+    left: -2.45rem;
+    top: 1.6rem;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: transparent;
+    border: 2px solid #6fffe9;
+
+    &.filled {
+      background: #6fffe9;
+      box-shadow: 0 0 6px #6fffe9;
+    }
+  }
+
+  .timeline-content {
+    padding: 1.2rem 1.5rem;
+    border: 1px solid rgba(111, 255, 233, 0.15);
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 4px;
+    transition: border-color 0.2s ease;
+
+    &:hover {
+      border-color: rgba(111, 255, 233, 0.4);
+    }
+  }
+
+  .timeline-header {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .timeline-role {
+    font-family: 'Oswald';
+    color: #ffffff;
+    font-size: 1.8rem;
+    margin: 0;
+  }
+
+  .timeline-company {
+    font-family: 'Raleway';
+    color: #6fffe9;
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin: 0 0 0.2rem 0;
+  }
+
+  .timeline-meta {
+    font-family: 'Raleway';
+    color: #aaaaaa;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .meta-sep {
+    color: #6fffe9;
+    font-size: 1.2rem;
+    line-height: 1;
+  }
+
+  .timeline-bullets {
+    font-family: 'Raleway';
+    color: #cccccc;
+    padding-left: 1.2rem;
+    margin-bottom: 0.75rem;
+    li {
+      margin-bottom: 0.3rem;
+      font-size: 1rem;
+    }
+  }
+
+  .timeline-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+  }
+
+  .tech-pill {
+    font-family: 'Oswald';
+    font-size: 0.75rem;
+    color: #6fffe9;
+    border: 1px solid #6fffe9;
+    padding: 2px 10px;
+    letter-spacing: 0.05em;
+  }
+
+  .timeline-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+  }
+
+  .tech-pill {
+    font-family: 'Oswald';
+    font-size: 0.75rem;
+    color: #6fffe9;
+    border: 1px solid #6fffe9;
+    padding: 2px 10px;
+    letter-spacing: 0.05em;
+  }
+
+  // ── Skills grid ───────────────────────────────────
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.75rem;
+    width: 100%;
+  }
+
+  .skill-card {
+    background: #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem 0.25rem;
+    transition: transform 0.2s ease;
+
+    &:hover {
+      transform: scale(1.06);
+    }
+
+    img {
+      width: 48px;
+      height: 48px;
+      object-fit: contain;
+    }
+
+    span {
+      font-family: 'Raleway';
+      color: #ffffff;
+      font-size: 0.75rem;
+      margin-top: 0.3rem;
+      text-align: center;
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  #experience {
+    .skills-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  #experience {
+    .skills-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
