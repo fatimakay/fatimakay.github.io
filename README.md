@@ -1,4 +1,13 @@
-# About this Repo
+# fatimakay.github.io
 
-A personal portfolio site built with React.JS and Tailwind CSS. Click the link in the About section to see a live preview on github pages. 
+My personal portfolio site, live at [fatimakay.github.io](https://fatimakay.github.io).
 
+Built with React (Create React App), Bootstrap and SCSS.
+
+## Development
+
+```bash
+npm install
+npm start        # dev server on http://localhost:3000
+npm run deploy   # build and publish to the gh-pages branch
+```

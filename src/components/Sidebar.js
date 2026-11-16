@@ -7,7 +7,7 @@ const navLinks = [
   { id: 'homepage',   label: 'Home',       Icon: Home },
   { id: 'about',      label: 'About Me',   Icon: User },
   { id: 'experience', label: 'Experience', Icon: TrendingUp },
-  { id: 'projects',   label: 'My Work',    Icon: Briefcase },
+  { id: 'projects',   label: 'Selected Work',    Icon: Briefcase },
   { id: 'contact',    label: 'Contact',    Icon: Send },
 ];
 
@@ -33,9 +33,9 @@ const Sidebar = () => {
   return (
     <>
       <div className="toggler">
-        <a href="#" onClick={() => setToggleMenu(!toggleMenu)}>
+        <button type="button" aria-label="Toggle menu" onClick={() => setToggleMenu(!toggleMenu)}>
           <Menu size="20" color="#6fffe9" />
-        </a>
+        </button>
       </div>
       <div className={`${toggleMenu ? 'wrapper' : null} h-100`} onClick={() => setToggleMenu(false)}>
         <div id="sidebar" className={`${toggleMenu ? 'sidebar-mobile' : 'sidebar'} d-flex flex-column justify-content-between gap-4 bg-black py-4 h-100`}>

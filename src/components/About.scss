@@ -28,3 +28,12 @@
     }
     }
 }
+
+#about p a {
+  color: #6fffe9;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(111, 255, 233, 0.4);
+  &:hover {
+    border-bottom-color: #6fffe9;
+  }
+}

@@ -1,22 +1,31 @@
 import './Experience.scss'
 import Javascript from '../assets/images/js.png'
+import Typescript from '../assets/images/typescript.png'
 import ReactImg from '../assets/images/react.png'
+import Angular from '../assets/images/angular.svg'
+import MUI from '../assets/images/mui.png'
 import SASS from '../assets/images/sass.png'
 import Tailwind from '../assets/images/tailwind.png'
-import Github from '../assets/images/github.png'
-import Bootstrap from '../assets/images/bootstrap.png'
-import Firebase from '../assets/images/firebase.png'
 import Python from '../assets/images/python.png'
+import Django from '../assets/images/django.svg'
 import SQL from '../assets/images/sql.png'
-import Tab from '../assets/images/tableau.png'
+import DB from '../assets/images/databricks.png'
+import Pandas from '../assets/images/pandas.png'
 import Seaborn from '../assets/images/seaborn.png'
 import Matplot from '../assets/images/matplot.png'
-import DB from '../assets/images/databricks.png'
+import Plotly from '../assets/images/plotly.svg'
+import Firebase from '../assets/images/firebase.png'
+import Playwright from '../assets/images/playwright.svg'
+import Docker from '../assets/images/docker.svg'
+import N8n from '../assets/images/n8n.svg'
 import Git from '../assets/images/git.png'
-import Typescript from '../assets/images/typescript.png'
-import MUI from '../assets/images/mui.png'
 
 const experiences = [
+  {
+    company: 'mycelia gGmbH',
+    role: 'Fullstack Software Engineer',
+    period: 'Apr 2026 – Present',
+  },
   {
     company: 'Deutsche Bank',
     role: 'Frontend Developer',
@@ -31,7 +40,7 @@ const experiences = [
   },
   {
     company: 'InSource Performance Solutions',
-    role: 'Software Engineer',
+    role: 'Web Development Intern',
     period: 'Sep 2021 – Jan 2022',
     location: 'Karachi, Pakistan',
   },
@@ -39,21 +48,25 @@ const experiences = [
 
 const skills = [
   { src: Javascript, label: 'JavaScript' },
-  { src: ReactImg,   label: 'React' },
   { src: Typescript, label: 'TypeScript' },
+  { src: ReactImg,   label: 'React' },
+  { src: Angular,    label: 'Angular' },
   { src: MUI,        label: 'MUI' },
   { src: SASS,       label: 'SASS' },
   { src: Tailwind,   label: 'Tailwind' },
-  { src: Bootstrap,  label: 'Bootstrap' },
   { src: Python,     label: 'Python' },
+  { src: Django,     label: 'Django' },
   { src: SQL,        label: 'SQL' },
+  { src: DB,         label: 'Databricks' },
+  { src: Pandas,     label: 'pandas' },
   { src: Seaborn,    label: 'Seaborn' },
   { src: Matplot,    label: 'matplotlib' },
-  { src: Tab,        label: 'Tableau' },
-  { src: DB,         label: 'Databricks' },
-  { src: Github,     label: 'Github' },
-  { src: Git,        label: 'Git' },
+  { src: Plotly,     label: 'Plotly' },
+  { src: Playwright, label: 'Playwright' },
+  { src: Docker,     label: 'Docker' },
+  { src: N8n,        label: 'n8n' },
   { src: Firebase,   label: 'Firebase' },
+  { src: Git,        label: 'Git' },
 ]
 
 const Experience = () => {
@@ -72,8 +85,12 @@ const Experience = () => {
                 <h4 className="timeline-company">{company}</h4>
                 <div className="timeline-meta">
                   <span>{period}</span>
-                  <span className="meta-sep">·</span>
-                  <span>{location}</span>
+                  {location && (
+                    <>
+                      <span className="meta-sep">·</span>
+                      <span>{location}</span>
+                    </>
+                  )}
                 </div>
               </div>
             </div>

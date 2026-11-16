@@ -13,6 +13,47 @@
   img {
     aspect-ratio: 19/9;
   }
+  .card.featured-card {
+    border: 1px solid rgba(111, 255, 233, 0.3);
+    &:hover {
+      transform: scale(1.01);
+    }
+  }
+  .featured-image {
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    img {
+      aspect-ratio: auto;
+      max-width: 100%;
+      max-height: 260px;
+      object-fit: contain;
+    }
+  }
+  .featured-highlights {
+    font-size: 1.05rem;
+    padding-left: 1.2rem;
+    li {
+      margin-bottom: 0.35rem;
+    }
+  }
+  .stack-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    list-style: none;
+    padding: 0;
+    margin: 0.75rem 0 0;
+    li {
+      font-family: 'Raleway';
+      font-size: 0.85rem;
+      color: #6fffe9;
+      border: 1px solid rgba(111, 255, 233, 0.4);
+      padding: 0.15rem 0.55rem;
+    }
+  }
   h2 {
     color: white;
     font-family: 'Oswald';

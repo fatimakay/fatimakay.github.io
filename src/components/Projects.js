@@ -1,266 +1,118 @@
 /* eslint-disable react/jsx-no-target-blank */
 import './Projects.scss'
+import OEBLogo from '../assets/images/oeb.png'
+
+const featured = {
+  title: 'Open Educational Badges',
+  image: OEBLogo,
+  description:
+    'Platform for documenting skills and competencies with digital credentials (Open Badges), used by educational institutions to issue, manage and verify badges. As a fullstack engineer at mycelia gGmbH, I build features across the Angular frontend and the Django API.',
+  highlights: [
+    'Badge Studio: in-browser badge designer, with badge images composed server-side from the stored design',
+    'PDF certificate editor: embeddable web component with canvas preview, free element positioning and custom fields',
+    'Mandatory TOTP two-factor authentication, from setup and login challenge to Redis-backed device tokens',
+    'Staff analytics dashboard with KPIs and per-institution drill-downs',
+    'Performance work: N+1 query fixes, async Celery tasks for emails and auto-issuance, nginx caching',
+    'Playwright end-to-end regression suite, Angular 21 → 22 upgrade and security patching',
+  ],
+  stack: ['Angular', 'TypeScript', 'Django', 'Python', 'MySQL', 'Celery', 'Docker', 'Playwright'],
+  links: [{ label: 'Visit Site', href: 'https://openbadges.education', primary: true }],
+}
+
+const projects = [
+  {
+    title: 'Policing the Police',
+    image: 'https://ucarecdn.com/8bc9e27d-6706-45e4-b33d-efc9c5eb4306/dash1.png',
+    description: 'Investigating potential racial biases in traffic stop data.',
+    stack: ['Python', 'pandas', 'Data Visualization'],
+    links: [{ label: 'View on Github', href: 'https://github.com/fatimakay/policing-the-police' }],
+  },
+  {
+    title: 'Weather vs. Flights dbt Project',
+    image:
+      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScV7_FeuQpPaFmAIH-VR7ICpktohwB7ts4vA&s',
+    description:
+      'Analyzing the impact of the January 2016 snowstorm on flight schedules, using SQL, dbt and pandas for data transformation.',
+    stack: ['SQL', 'dbt', 'pandas'],
+    links: [{ label: 'View on Github', href: 'https://github.com/fatimakay/snowzilla_dbt_project' }],
+  },
+  {
+    title: 'Delivery Process Analysis',
+    image:
+      'https://img.freepik.com/premium-photo/muesli-with-berries-milk-tablehealthy-granola-yogurt-with-berries-breakfast-clos_912214-9589.jpg?w=996',
+    description:
+      'A data exploration and predictive analysis project on muesli distribution order data.',
+    stack: ['Python', 'pandas', 'Predictive Analysis'],
+    links: [
+      { label: 'View on Github', href: 'https://github.com/fatimakay/delivery-process-analysis' },
+    ],
+  },
+]
+
+const Links = ({ links }) =>
+  links.map(({ label, href, primary }) => (
+    <a key={href} href={href} target="_blank">
+      <button className={`${primary ? 'livebtn' : 'githubbtn'} btn fs-5`}>{label}</button>
+    </a>
+  ))
+
+const Stack = ({ items }) => (
+  <ul className="stack-tags">
+    {items.map((item) => (
+      <li key={item}>{item}</li>
+    ))}
+  </ul>
+)
 
 const Projects = () => {
   return (
     <section id="projects" className="row">
       <div className="col-11 mt-5 d-flex flex-column justify-content-end ps-sm-5 align-items-center text-center text-sm-start align-items-sm-center">
-        <h1 className="display-3">MY WORK</h1>
-        <p className="fs-4">A collection of some of my projects.</p>
+        <h1 className="display-3">SELECTED WORK</h1>
       </div>
 
-      <h2 className="display-4">Data Analytics</h2>
-      <div id="dataprojectslist" className="col-11 d-flex flex-column">
-        <div className="row row-cols-1 row-cols-md-3 g-4">
-          <div className="col d-flex align-items-stretch">
-            <div className="card">
-              <img
-                src="https://ucarecdn.com/8bc9e27d-6706-45e4-b33d-efc9c5eb4306/dash1.png"
-                className="card-img-top"
-                alt="Policing the Police"
-              />
-              <div className="card-body">
-                <h3 className="card-title">Policing the Police</h3>
-                <p className="card-text fs-5">
-                  Investigating potential racial biases in traffic stop data.
-                </p>
-              </div>
-              <div className="card-footer">
-                <a
-                  href="https://github.com/fatimakay/policing-the-police"
-                  target="_blank"
-                >
-                  <button className="githubbtn btn fs-5">View on Github</button>
-                </a>
-              </div>
+      <div className="col-11 d-flex flex-column">
+        {/* === FEATURED === */}
+        <div className="card featured-card mb-4">
+          <div className="row g-0">
+            <div className="col-12 col-lg-4 featured-image">
+              <img src={featured.image} alt={featured.title} />
             </div>
-          </div>
-
-          <div className="col d-flex align-items-stretch">
-            <div className="card">
-              <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScV7_FeuQpPaFmAIH-VR7ICpktohwB7ts4vA&s"
-                className="card-img-top"
-                alt="Weather vs Flights"
-              />
+            <div className="col-12 col-lg-8 d-flex flex-column">
               <div className="card-body">
-                <h3 className="card-title">Weather vs. Flights DBT Project</h3>
-                <p className="card-text fs-5">
-                  Analyzing the Impact of the January 2016 Snowstorm on Flight
-                  Schedules using SQL, dbt, and pandas for data transformation.
-                </p>
+                <h3 className="card-title">{featured.title}</h3>
+                <p className="card-text fs-5">{featured.description}</p>
+                <ul className="featured-highlights">
+                  {featured.highlights.map((h) => (
+                    <li key={h}>{h}</li>
+                  ))}
+                </ul>
+                <Stack items={featured.stack} />
               </div>
               <div className="card-footer">
-                <a
-                  href="https://github.com/fatimakay/snowzilla_dbt_project"
-                  target="_blank"
-                >
-                  <button className="githubbtn btn fs-5">View on Github</button>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div className="col d-flex align-items-stretch">
-            <div className="card">
-              <img
-                src="https://img.freepik.com/premium-photo/muesli-with-berries-milk-tablehealthy-granola-yogurt-with-berries-breakfast-clos_912214-9589.jpg?w=996"
-                className="card-img-top"
-                alt="Delivery Process Analysis"
-              />
-              <div className="card-body">
-                <h3 className="card-title">Delivery Process Analysis</h3>
-                <p className="card-text fs-5">
-                  A data exploration and predictive analysis project on Muesli
-                  distribution order data.
-                </p>
-              </div>
-              <div className="card-footer">
-                <a
-                  href="https://github.com/fatimakay/delivery-process-analysis"
-                  target="_blank"
-                >
-                  <button className="githubbtn btn fs-5">View on Github</button>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div className="col d-flex align-items-stretch">
-            <div className="card">
-              <img
-                src="https://ucarecdn.com/84669443-aae1-4464-8bb5-66c6aea8e194/disneyneu.jpg"
-                className="card-img-top"
-                alt="Exploring Disney Data"
-              />
-              <div className="card-body">
-                <h3 className="card-title">Exploring Disney Data</h3>
-                <p className="card-text fs-5">
-                  Step-by-Step Data Preprocessing and Descriptive Analysis
-                </p>
-              </div>
-              <div className="card-footer">
-                <a
-                  href="https://github.com/fatimakay/python-disney-project"
-                  target="_blank"
-                >
-                  <button className="githubbtn btn fs-5">View on Github</button>
-                </a>
+                <Links links={featured.links} />
               </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <h2 className="display-4">Web Development</h2>
-      <div id="webprojectslist" className="col-11 d-flex flex-column">
+        {/* === OTHER PROJECTS === */}
         <div className="row row-cols-1 row-cols-md-3 g-4">
-          <div className="col d-flex align-items-stretch">
-            <div className="card">
-              <img
-                src="https://ucarecdn.com/10be364e-bca7-4d0d-8142-195ba7c76717/-/preview/-/quality/smart/-/format/auto/"
-                className="card-img-top"
-                alt="Nebula Chat App"
-              />
-              <div className="card-body">
-                <h3 className="card-title">Nebula - Realtime Chat App</h3>
-                <p className="card-text fs-5">
-                  A chat application which uses Firebase database to fetch
-                  conversations in realtime.
-                </p>
-              </div>
-              <div className="card-footer">
-                <a
-                  href="https://github.com/fatimakay/nebula-chat-app"
-                  target="_blank"
-                >
-                  <button className="githubbtn btn fs-5">View on Github</button>
-                </a>
-                <a href="https://nebulachatapp.web.app" target="_blank">
-                  <button className="livebtn btn fs-5">Live Demo</button>
-                </a>
+          {projects.map(({ title, image, description, stack, links }) => (
+            <div key={title} className="col d-flex align-items-stretch">
+              <div className="card">
+                <img src={image} className="card-img-top" alt={title} />
+                <div className="card-body">
+                  <h3 className="card-title">{title}</h3>
+                  <p className="card-text fs-5">{description}</p>
+                  <Stack items={stack} />
+                </div>
+                <div className="card-footer">
+                  <Links links={links} />
+                </div>
               </div>
             </div>
-          </div>
-
-          <div className="col d-flex align-items-stretch">
-            <div className="card">
-              <img
-                src="https://ucarecdn.com/70141a98-3661-4019-aecd-ab3e7ef5e7b2/-/preview/-/quality/smart/-/format/auto/"
-                className="card-img-top"
-                alt="Weather App"
-              />
-              <div className="card-body">
-                <h3 className="card-title">Weather App</h3>
-                <p className="card-text fs-5">
-                  A weather app developed using the OpenWeatherMap API, with
-                  dynamic backgrounds based on weather conditions
-                </p>
-              </div>
-              <div className="card-footer">
-                <a
-                  href="https://github.com/fatimakay/react-weather-app"
-                  target="_blank"
-                >
-                  <button className="githubbtn btn fs-5">View on Github</button>
-                </a>
-                <a
-                  href="https://fatimakay.github.io/react-weather-app/"
-                  target="_blank"
-                >
-                  <button className="livebtn btn fs-5">Live Demo</button>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div className="col d-flex align-items-stretch">
-            <div className="card">
-              <img
-                src="https://ucarecdn.com/a263d505-1ca3-4b88-b621-f077d34318a7/-/preview/-/quality/smart/-/format/auto/"
-                className="card-img-top"
-                alt="Memoed Notes App"
-              />
-              <div className="card-body">
-                <h3 className="card-title">Memoed - Notes Taking App</h3>
-                <p className="card-text fs-5">
-                  Simple note-taking application with login functionality. Built
-                  with ReactJS and hosted on Firebase.
-                </p>
-              </div>
-              <div className="card-footer">
-                <a
-                  href="https://github.com/fatimakay/notes-app"
-                  target="_blank"
-                >
-                  <button className="githubbtn btn fs-5">View on Github</button>
-                </a>
-                <a href="https://memoed-73535.web.app/" target="_blank">
-                  <button className="livebtn btn fs-5">Live Demo</button>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div className="col d-flex align-items-stretch">
-            <div className="card">
-              <img
-                src="https://ucarecdn.com/5b7930c1-fc49-406b-b11d-c1c79930289b/-/preview/-/quality/smart/-/format/auto/"
-                className="card-img-top"
-                alt="Travel Landing Page"
-              />
-              <div className="card-body">
-                <h3 className="card-title">Travel Landing Page Design</h3>
-                <p className="card-text fs-5">
-                  Responsive landing page design built using Bootstrap
-                </p>
-              </div>
-              <div className="card-footer">
-                <a
-                  href="https://github.com/fatimakay/travel-landing-page"
-                  target="_blank"
-                >
-                  <button className="githubbtn btn fs-5">View on Github</button>
-                </a>
-                <a
-                  href="https://fatimakay.github.io/travel-landing-page/"
-                  target="_blank"
-                >
-                  <button className="livebtn btn fs-5">Live Demo</button>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div className="col d-flex align-items-stretch">
-            <div className="card">
-              <img
-                src="https://ucarecdn.com/b60bef1d-2a16-4bf7-9aad-ddb4b3fc18e1/-/preview/-/quality/smart/-/format/auto/"
-                className="card-img-top"
-                alt="Quiz App"
-              />
-              <div className="card-body">
-                <h3 className="card-title">Quiz App</h3>
-                <p className="card-text fs-5">
-                  A basic quiz application made with JavaScript
-                </p>
-              </div>
-              <div className="card-footer">
-                <a
-                  href="https://github.com/fatimakay/quiztoit-app"
-                  target="_blank"
-                >
-                  <button className="githubbtn btn fs-5">View on Github</button>
-                </a>
-                <a
-                  href="https://fatimakay.github.io/quiztoit-app"
-                  target="_blank"
-                >
-                  <button className="livebtn btn fs-5">Live Demo</button>
-                </a>
-              </div>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </section>
