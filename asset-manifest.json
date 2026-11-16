@@ -1,20 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.a7588518.css",
-    "main.js": "/static/js/main.e5674446.js",
-    "static/js/787.90147cfc.chunk.js": "/static/js/787.90147cfc.chunk.js",
+    "main.css": "/static/css/main.6c52462e.css",
+    "main.js": "/static/js/main.c044fabb.js",
+    "static/media/profile.png": "/static/media/profile.1e701508f9f5f04786d8.png",
     "static/media/matplot.png": "/static/media/matplot.f3fc2f9556005ed2cfa2.png",
     "static/media/sky1.jpg": "/static/media/sky1.a6cc71a59289ddfe4059.jpg",
-    "static/media/FSK.pdf": "/static/media/FSK.dea87208e0a0799ffa09.pdf",
+    "static/media/Fatima_Khan_Resume.pdf": "/static/media/Fatima_Khan_Resume.e633763553eb36fde028.pdf",
     "static/media/Raleway-Regular.ttf": "/static/media/Raleway-Regular.c268e80ba67c4a294054.ttf",
     "static/media/Oswald-VariableFont_wght.ttf": "/static/media/Oswald-VariableFont_wght.46d7853f0185f6bf0c93.ttf",
     "static/media/sql.png": "/static/media/sql.eb0ce03f3cffd51b5998.png",
-    "static/media/github.png": "/static/media/github.cf072ed8cb1c0cd6d304.png",
+    "static/media/oeb.png": "/static/media/oeb.fd52cfab08c7915baaf6.png",
     "static/media/react.png": "/static/media/react.8fb3c770f5d958c57444.png",
     "static/media/sass.png": "/static/media/sass.a54e794cbe5e53f8ff7a.png",
     "static/media/Oswald-Light.ttf": "/static/media/Oswald-Light.0db1d0c56bdf030d9f31.ttf",
     "static/media/rocketship.png": "/static/media/rocketship.d0c1f87c09d90086d92e.png",
-    "static/media/bootstrap.png": "/static/media/bootstrap.f88cc32674ccebc9d650.png",
     "static/media/tailwind.png": "/static/media/tailwind.a467208d973bd89f034f.png",
     "static/media/firebase.png": "/static/media/firebase.0388a8a26f2fdcc03987.png",
     "static/media/seaborn.png": "/static/media/seaborn.84833d63557736dedf46.png",
@@ -24,13 +23,18 @@
     "static/media/databricks.png": "/static/media/databricks.3ae9efa2e16643153812.png",
     "static/media/typescript.png": "/static/media/typescript.01647903c8f583e9e72d.png",
     "static/media/logo.png": "/static/media/logo.8a926147d5020e57ce73.png",
+    "static/media/plotly.svg": "/static/media/plotly.c158b7e9446528c0700671b7bc51e845.svg",
+    "static/media/docker.svg": "/static/media/docker.1d41320cb0101dbbc6fe182abd590263.svg",
+    "static/media/playwright.svg": "/static/media/playwright.90dcdab91976dde5410ea9cd1186f59c.svg",
+    "static/media/n8n.svg": "/static/media/n8n.e4f6944d696d11ca378ec7b69e297730.svg",
+    "static/media/angular.svg": "/static/media/angular.1db63aacc3ee9d0a610302ec72ed0c7a.svg",
     "index.html": "/index.html",
-    "main.a7588518.css.map": "/static/css/main.a7588518.css.map",
-    "main.e5674446.js.map": "/static/js/main.e5674446.js.map",
-    "787.90147cfc.chunk.js.map": "/static/js/787.90147cfc.chunk.js.map"
+    "static/media/django.svg": "/static/media/django.c219adfb9de7aacb0efae2dd4adf211a.svg",
+    "main.6c52462e.css.map": "/static/css/main.6c52462e.css.map",
+    "main.c044fabb.js.map": "/static/js/main.c044fabb.js.map"
   },
   "entrypoints": [
-    "static/css/main.a7588518.css",
-    "static/js/main.e5674446.js"
+    "static/css/main.6c52462e.css",
+    "static/js/main.c044fabb.js"
   ]
 }
