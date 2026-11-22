@@ -21,6 +21,15 @@ const featured = {
 
 const projects = [
   {
+    title: 'UniRanked',
+    status: 'In progress',
+    tagline: 'Real admission results for master’s applicants to Germany',
+    description:
+      'A results database for international students applying to master’s programmes in Germany. Applicants share their background and outcome, and others can see results from people like them, with every CGPA converted to the German scale. Planned: an LLM-powered transcript check against programme requirements.',
+    stack: ['React', 'TypeScript', 'MUI', 'Firebase', 'LLMs'],
+    links: [{ label: 'View on Github', href: 'https://github.com/fatimakay/uniranked' }],
+  },
+  {
     title: 'Policing the Police',
     image: 'https://ucarecdn.com/8bc9e27d-6706-45e4-b33d-efc9c5eb4306/dash1.png',
     description: 'Investigating potential racial biases in traffic stop data.',
@@ -97,13 +106,23 @@ const Projects = () => {
         </div>
 
         {/* === OTHER PROJECTS === */}
-        <div className="row row-cols-1 row-cols-md-3 g-4">
-          {projects.map(({ title, image, description, stack, links }) => (
+        <div className="row row-cols-1 row-cols-md-2 g-4">
+          {projects.map(({ title, image, tagline, status, description, stack, links }) => (
             <div key={title} className="col d-flex align-items-stretch">
               <div className="card">
-                <img src={image} className="card-img-top" alt={title} />
+                {image ? (
+                  <img src={image} className="card-img-top" alt={title} />
+                ) : (
+                  <div className="card-img-top card-banner">
+                    <span className="card-banner-title">{title}</span>
+                    {tagline && <span className="card-banner-tagline">{tagline}</span>}
+                  </div>
+                )}
                 <div className="card-body">
-                  <h3 className="card-title">{title}</h3>
+                  <h3 className="card-title">
+                    {title}
+                    {status && <span className="status-badge">{status}</span>}
+                  </h3>
                   <p className="card-text fs-5">{description}</p>
                   <Stack items={stack} />
                 </div>

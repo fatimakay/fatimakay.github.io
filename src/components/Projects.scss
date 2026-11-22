@@ -39,6 +39,42 @@
       margin-bottom: 0.35rem;
     }
   }
+  .card-banner {
+    aspect-ratio: 19/9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1.5rem;
+    text-align: center;
+    background:
+      radial-gradient(circle at 20% 20%, rgba(111, 255, 233, 0.25), transparent 55%),
+      linear-gradient(135deg, #0b132b, #1c2541);
+    border-bottom: 1px solid rgba(111, 255, 233, 0.3);
+  }
+  .card-banner-title {
+    font-family: 'Oswald';
+    font-size: 2.6rem;
+    color: #6fffe9;
+    letter-spacing: 0.05em;
+  }
+  .card-banner-tagline {
+    font-family: 'Raleway';
+    font-size: 1.05rem;
+    color: #dddddd;
+  }
+  .status-badge {
+    font-family: 'Raleway';
+    font-size: 0.8rem;
+    vertical-align: middle;
+    margin-left: 0.6rem;
+    padding: 0.15rem 0.5rem;
+    border: 1px solid #f7c948;
+    color: #f7c948;
+    border-radius: 999px;
+    white-space: nowrap;
+  }
   .stack-tags {
     display: flex;
     flex-wrap: wrap;
